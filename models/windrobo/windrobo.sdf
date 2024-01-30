@@ -26,17 +26,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
           <script>
-            <name>ModelPreview_1::base_link::base_link_fixed_joint_lump__pcb_link_visual_1_MATERIAL_</name>
-            <uri>__default__</uri>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -50,17 +43,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
           <script>
-            <name>ModelPreview_1::base_link::base_link_visual_MATERIAL_</name>
-            <uri>__default__</uri>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -74,18 +60,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
           <script>
-            <name>
-              ModelPreview_1::base_link::base_link_fixed_joint_lump__water_link_visual_2_MATERIAL_</name>
-            <uri>__default__</uri>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -172,7 +150,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -222,7 +203,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -272,7 +256,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -322,7 +309,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -372,7 +362,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -422,7 +415,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -472,7 +468,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -522,7 +521,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -573,16 +575,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
           <script>
-            <name>ModelPreview_1::servo1_link::servo1_link_visual_MATERIAL_</name>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -632,16 +628,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
           <script>
-            <name>ModelPreview_1::servo2_link::servo2_link_visual_MATERIAL_</name>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -691,16 +681,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
           <script>
-            <name>ModelPreview_1::servo3_link::servo3_link_visual_MATERIAL_</name>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -749,7 +733,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -800,16 +787,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
           <script>
-            <name>ModelPreview_1::servo5_link::servo5_link_visual_MATERIAL_</name>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -859,16 +840,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel'>
-            <normal_map>__default__</normal_map>
-          </shader>
           <script>
-            <name>ModelPreview_1::servo6_link::servo6_link_visual_MATERIAL_</name>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
-          <ambient>0 0 0 1</ambient>
-          <diffuse>0 0 0 1</diffuse>
-          <specular>0 0 0 1</specular>
-          <emissive>0 0 0 1</emissive>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>
@@ -917,7 +892,10 @@
           </mesh>
         </geometry>
         <material>
-          <shader type='pixel' />
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
         </material>
         <transparency>0</transparency>
         <cast_shadows>1</cast_shadows>

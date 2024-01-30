@@ -182,7 +182,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/rotor1_link.STL</uri>
+            <uri>model://windrobo/meshes/rotor1_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -232,7 +232,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/rotor2_link.STL</uri>
+            <uri>model://windrobo/meshes/rotor2_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -282,7 +282,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/rotor3_link.STL</uri>
+            <uri>model://windrobo/meshes/rotor3_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -332,7 +332,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/rotor4_link.STL</uri>
+            <uri>model://windrobo/meshes/rotor4_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -382,7 +382,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/rotor5_link.STL</uri>
+            <uri>model://windrobo/meshes/rotor5_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -432,7 +432,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/rotor6_link.STL</uri>
+            <uri>model://windrobo/meshes/rotor6_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -482,7 +482,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/rotor7_link.STL</uri>
+            <uri>model://windrobo/meshes/rotor7_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -532,7 +532,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/rotor8_link.STL</uri>
+            <uri>model://windrobo/meshes/rotor8_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -759,7 +759,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/servo4_link.STL</uri>
+            <uri>model://windrobo/meshes/servo4_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -927,7 +927,7 @@
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/windrobo/windrobo/documents/SDF_files/windrobo/meshes/servo7_link.STL</uri>
+            <uri>model://windrobo/meshes/servo7_link.STL</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>

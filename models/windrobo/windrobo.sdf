@@ -1,4 +1,3 @@
-<?xml version='1.0'?>
 <sdf version='1.7'>
   <model name='windrobo'>
     <pose>0 0 0.6 0 0 0</pose>
@@ -1168,7 +1167,7 @@
         </ode>
       </physics>
     </joint>
-    <joint name='rotor_8_joint' type='revolute'>
+    <joint name='rotor8_joint' type='revolute'>
       <parent>base_link</parent>
       <child>rotor8_link</child>
       <pose>0 0 0 0 -0 0</pose>

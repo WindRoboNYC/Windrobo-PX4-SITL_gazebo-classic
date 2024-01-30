@@ -1475,7 +1475,8 @@
       <parent>base_link</parent>
     </joint>
 
-    <include>
+
+    <!--<include>
       <uri>model://magnetometer</uri>
       <pose>0 0.16 0.367 0 0 3.14159</pose>
       <name>mag</name>
@@ -1485,6 +1486,8 @@
       <child>mag::link</child>
       <parent>base_link</parent>
     </joint>
+   -->
+
 
     <!-- Plugin Definiton-->
 

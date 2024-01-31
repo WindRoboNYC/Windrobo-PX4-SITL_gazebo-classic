@@ -127,17 +127,6 @@
       </collision>
     </link>
 
-    <include>
-      <uri>model://gps</uri>
-      <pose>0 0 0 0 0 0</pose>
-      <name>gps</name>
-    </include>
-
-    <joint name='gps_joint' type='fixed'>
-      <child>gps::link</child>
-      <parent>base_link</parent>
-    </joint>
-
     <link name='rotor1_link'>
       <pose>0.375836 -0.390942 0.066381 0 -0 0</pose>
       <inertial>

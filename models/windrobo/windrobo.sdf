@@ -14,9 +14,6 @@
           <izz>0.142881</izz>
         </inertia>
       </inertial>
-      <velocity_decay />
-      <self_collide>0</self_collide>
-      <gravity>1</gravity>
       <visual name='base_link_fixed_joint_lump__pcb_link_visual_1'>
         <pose>-0.202281 -0.00167 -0.206791 0 -0 0</pose>
         <geometry>
@@ -125,10 +122,12 @@
           </friction>
         </surface>
       </collision>
+      <velocity_decay />
+      <gravity>1</gravity>
     </link>
 
     <link name='/imu_link'>
-      <pose>0 0 0.02 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.015</mass>
@@ -212,6 +211,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay />
     </link>
     <link name='rotor2_link'>
       <pose>0.389645 0.388556 0.066381 0 -0 0</pose>
@@ -263,6 +264,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay />
     </link>
     <link name='rotor3_link'>
       <pose>-0.392192 0.387361 0.066381 0 -0 0</pose>
@@ -314,6 +317,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay />
     </link>
     <link name='rotor4_link'>
       <pose>-0.391001 -0.39209 0.066381 0 -0 0</pose>
@@ -365,6 +370,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay />
     </link>
     <link name='rotor5_link'>
       <pose>0.389645 0.388556 -0.064619 0 -0 0</pose>
@@ -416,6 +423,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay />
     </link>
     <link name='rotor6_link'>
       <pose>0.390836 -0.390896 -0.064619 0 -0 0</pose>
@@ -467,6 +476,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay />
     </link>
     <link name='rotor7_link'>
       <pose>-0.391001 -0.39209 -0.064619 0 -0 0</pose>
@@ -518,6 +529,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay />
     </link>
     <link name='rotor8_link'>
       <pose>-0.392192 0.387361 -0.064619 0 -0 0</pose>
@@ -569,6 +582,8 @@
           </friction>
         </surface>
       </collision>
+      <gravity>1</gravity>
+      <velocity_decay />
     </link>
 
     <!-- 

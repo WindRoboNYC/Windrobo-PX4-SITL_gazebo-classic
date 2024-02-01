@@ -931,28 +931,13 @@
         <limit>
           <lower>-1e+09</lower>
           <upper>1e+09</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
     </joint>
     <joint name='rotor2_joint' type='revolute'>
       <parent>base_link</parent>
@@ -963,28 +948,13 @@
         <limit>
           <lower>-1e+09</lower>
           <upper>1e+09</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
     </joint>
     <joint name='rotor3_joint' type='revolute'>
       <parent>base_link</parent>
@@ -995,28 +965,13 @@
         <limit>
           <lower>-1e+09</lower>
           <upper>1e+09</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
     </joint>
     <joint name='rotor4_joint' type='revolute'>
       <parent>base_link</parent>
@@ -1033,22 +988,9 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
     </joint>
     <joint name='rotor5_joint' type='revolute'>
       <parent>base_link</parent>
@@ -1059,28 +1001,13 @@
         <limit>
           <lower>-1e+09</lower>
           <upper>1e+09</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
     </joint>
     <joint name='rotor6_joint' type='revolute'>
       <parent>base_link</parent>
@@ -1091,28 +1018,13 @@
         <limit>
           <lower>-1e+09</lower>
           <upper>1e+09</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
     </joint>
     <joint name='rotor7_joint' type='revolute'>
       <parent>base_link</parent>
@@ -1123,28 +1035,13 @@
         <limit>
           <lower>-1e+09</lower>
           <upper>1e+09</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
     </joint>
     <joint name='rotor8_joint' type='revolute'>
       <parent>base_link</parent>
@@ -1155,28 +1052,13 @@
         <limit>
           <lower>-1e+09</lower>
           <upper>1e+09</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0</damping>
-          <friction>0</friction>
         </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
-      <physics>
-        <ode>
-          <limit>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </limit>
-          <suspension>
-            <cfm>0</cfm>
-            <erp>0.2</erp>
-          </suspension>
-        </ode>
-      </physics>
     </joint>
     <joint name='servo1_joint' type='prismatic'>
       <parent>base_link</parent>

@@ -1527,7 +1527,6 @@
           <zero_position_disarmed>0</zero_position_disarmed>
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor1_joint</joint_name>
         </channel>
         <channel name='rotor1'>
           <input_index>1</input_index>
@@ -1536,7 +1535,6 @@
           <zero_position_disarmed>0</zero_position_disarmed>
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor2_joint</joint_name>
         </channel>
         <channel name='rotor2'>
           <input_index>2</input_index>
@@ -1545,7 +1543,6 @@
           <zero_position_disarmed>0</zero_position_disarmed>
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor3_joint</joint_name>
         </channel>
         <channel name='rotor3'>
           <input_index>3</input_index>
@@ -1554,7 +1551,6 @@
           <zero_position_disarmed>0</zero_position_disarmed>
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor4_joint</joint_name>
         </channel>
         <channel name='rotor4'>
           <input_index>4</input_index>
@@ -1563,7 +1559,6 @@
           <zero_position_disarmed>0</zero_position_disarmed>
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor5_joint</joint_name>
         </channel>
         <channel name='rotor5'>
           <input_index>5</input_index>
@@ -1572,7 +1567,6 @@
           <zero_position_disarmed>0</zero_position_disarmed>
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor6_joint</joint_name>
         </channel>
         <channel name='rotor6'>
           <input_index>6</input_index>
@@ -1581,7 +1575,6 @@
           <zero_position_disarmed>0</zero_position_disarmed>
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor7_joint</joint_name>
         </channel>
         <channel name='rotor7'>
           <input_index>7</input_index>
@@ -1590,7 +1583,6 @@
           <zero_position_disarmed>0</zero_position_disarmed>
           <zero_position_armed>0</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
-          <joint_name>rotor8_joint</joint_name>
         </channel>
       </control_channels>
     </plugin>

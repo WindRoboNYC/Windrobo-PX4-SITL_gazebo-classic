@@ -586,6 +586,8 @@
         </surface>
       </collision>
     </link>
+
+    <!-- 
     <link name='servo1_link'>
       <pose>-8.2e-05 -0.001169 -0.145886 0 -0 0</pose>
       <inertial>
@@ -957,6 +959,7 @@
         </surface>
       </collision>
     </link>
+    -->
     <joint name='rotor1_joint' type='revolute'>
       <parent>base_link</parent>
       <child>rotor1_link</child>

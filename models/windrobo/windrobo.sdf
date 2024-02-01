@@ -1,4 +1,4 @@
-<sdf version='1.7'>
+<sdf version='1.6'>
   <model name='windrobo'>
     <pose>0 0 0.6 0 0 0</pose>
     <link name='base_link'>
@@ -213,6 +213,23 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
+    <joint name='rotor1_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor1_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+09</lower>
+          <upper>1e+09</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
     <link name='rotor2_link'>
       <pose>0.389645 0.388556 0.066381 0 -0 0</pose>
       <inertial>
@@ -265,6 +282,23 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
+    <joint name='rotor2_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor2_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+09</lower>
+          <upper>1e+09</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
     <link name='rotor3_link'>
       <pose>-0.392192 0.387361 0.066381 0 -0 0</pose>
       <inertial>
@@ -317,6 +351,23 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
+    <joint name='rotor3_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor3_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+09</lower>
+          <upper>1e+09</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
     <link name='rotor4_link'>
       <pose>-0.391001 -0.39209 0.066381 0 -0 0</pose>
       <inertial>
@@ -369,6 +420,25 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
+    <joint name='rotor4_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor4_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+09</lower>
+          <upper>1e+09</upper>
+          <effort>0.0001</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
     <link name='rotor5_link'>
       <pose>0.389645 0.388556 -0.064619 0 -0 0</pose>
       <inertial>
@@ -421,6 +491,23 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
+    <joint name='rotor5_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor5_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+09</lower>
+          <upper>1e+09</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
     <link name='rotor6_link'>
       <pose>0.390836 -0.390896 -0.064619 0 -0 0</pose>
       <inertial>
@@ -473,6 +560,23 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
+    <joint name='rotor6_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor6_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+09</lower>
+          <upper>1e+09</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
     <link name='rotor7_link'>
       <pose>-0.391001 -0.39209 -0.064619 0 -0 0</pose>
       <inertial>
@@ -525,6 +629,23 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
+    <joint name='rotor7_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor7_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+09</lower>
+          <upper>1e+09</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
     <link name='rotor8_link'>
       <pose>-0.392192 0.387361 -0.064619 0 -0 0</pose>
       <inertial>
@@ -577,7 +698,23 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
-
+    <joint name='rotor8_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor8_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+09</lower>
+          <upper>1e+09</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
     <!-- 
     <link name='servo1_link'>
       <pose>-8.2e-05 -0.001169 -0.145886 0 -0 0</pose>
@@ -951,144 +1088,6 @@
       </collision>
     </link>
     -->
-    <joint name='rotor1_joint' type='revolute'>
-      <parent>base_link</parent>
-      <child>rotor1_link</child>
-      <pose>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 -1</xyz>
-        <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <joint name='rotor2_joint' type='revolute'>
-      <parent>base_link</parent>
-      <child>rotor2_link</child>
-      <pose>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 -1</xyz>
-        <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <joint name='rotor3_joint' type='revolute'>
-      <parent>base_link</parent>
-      <child>rotor3_link</child>
-      <pose>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 -1</xyz>
-        <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <joint name='rotor4_joint' type='revolute'>
-      <parent>base_link</parent>
-      <child>rotor4_link</child>
-      <pose>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 -1</xyz>
-        <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <joint name='rotor5_joint' type='revolute'>
-      <parent>base_link</parent>
-      <child>rotor5_link</child>
-      <pose>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <joint name='rotor6_joint' type='revolute'>
-      <parent>base_link</parent>
-      <child>rotor6_link</child>
-      <pose>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <joint name='rotor7_joint' type='revolute'>
-      <parent>base_link</parent>
-      <child>rotor7_link</child>
-      <pose>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
-    <joint name='rotor8_joint' type='revolute'>
-      <parent>base_link</parent>
-      <child>rotor8_link</child>
-      <pose>0 0 0 0 -0 0</pose>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
-        </limit>
-        <dynamics>
-          <spring_reference>0</spring_reference>
-          <spring_stiffness>0</spring_stiffness>
-        </dynamics>
-        <use_parent_model_frame>1</use_parent_model_frame>
-      </axis>
-    </joint>
 
     <!--
     <joint name='servo1_joint' type='prismatic'>
@@ -1330,16 +1329,12 @@
       <parent>base_link</parent>
     </joint>
    -->
-
-
     <!-- Plugin Definiton-->
-
     <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
       <robotNamespace />
       <linkName>base_link</linkName>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <plugin name='motor_1' filename='libgazebo_motor_model.so'>
       <robotNamespace />
       <jointName>rotor1_joint</jointName>
@@ -1408,7 +1403,6 @@
       <motorSpeedPubTopic>/motor_speed/3</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <plugin name='motor_5' filename='libgazebo_motor_model.so'>
       <robotNamespace />
       <jointName>rotor5_joint</jointName>
@@ -1443,7 +1437,6 @@
       <motorSpeedPubTopic>/motor_speed/5</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <plugin name='motor_7' filename='libgazebo_motor_model.so'>
       <robotNamespace />
       <jointName>rotor7_joint</jointName>
@@ -1478,23 +1471,18 @@
       <motorSpeedPubTopic>/motor_speed/7</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
-
     <include>
       <uri>model://gps</uri>
-      <pose>0 0.16 0.367 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <name>gps</name>
     </include>
-
     <joint name='gps_joint' type='fixed'>
       <child>gps::link</child>
       <parent>base_link</parent>
     </joint>
-
-
     <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>
       <robotNamespace />
     </plugin>
-
     <plugin name='magnetometer_plugin' filename='libgazebo_magnetometer_plugin.so'>
       <robotNamespace />
       <pubRate>100</pubRate>
@@ -1503,14 +1491,12 @@
       <biasCorrelationTime>600</biasCorrelationTime>
       <magTopic>/mag</magTopic>
     </plugin>
-
     <plugin name='barometer_plugin' filename='libgazebo_barometer_plugin.so'>
       <robotNamespace />
       <pubRate>50</pubRate>
       <baroTopic>/baro</baroTopic>
       <baroDriftPaPerSec>0</baroDriftPaPerSec>
     </plugin>
-
     <plugin name='mavlink_interface' filename='libgazebo_mavlink_interface.so'>
       <robotNamespace />
       <imuSubTopic>/imu</imuSubTopic>
@@ -1608,9 +1594,7 @@
         </channel>
       </control_channels>
     </plugin>
-
     <static>0</static>
-
     <plugin name='rotors_gazebo_imu_plugin' filename='libgazebo_imu_plugin.so'>
       <robotNamespace />
       <linkName>/imu_link</linkName>
@@ -1624,6 +1608,5 @@
       <accelerometerBiasCorrelationTime>300.0</accelerometerBiasCorrelationTime>
       <accelerometerTurnOnBiasSigma>0.196</accelerometerTurnOnBiasSigma>
     </plugin>
-
   </model>
 </sdf>

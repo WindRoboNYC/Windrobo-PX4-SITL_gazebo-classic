@@ -205,8 +205,6 @@
         <surface>
           <contact>
             <ode>
-              <min_depth>0.001</min_depth>
-              <max_vel>0</max_vel>
             </ode>
           </contact>
           <friction>
@@ -258,8 +256,6 @@
         <surface>
           <contact>
             <ode>
-              <min_depth>0.001</min_depth>
-              <max_vel>0</max_vel>
             </ode>
           </contact>
           <friction>
@@ -311,8 +307,6 @@
         <surface>
           <contact>
             <ode>
-              <min_depth>0.001</min_depth>
-              <max_vel>0</max_vel>
             </ode>
           </contact>
           <friction>
@@ -364,8 +358,6 @@
         <surface>
           <contact>
             <ode>
-              <min_depth>0.001</min_depth>
-              <max_vel>0</max_vel>
             </ode>
           </contact>
           <friction>
@@ -417,8 +409,6 @@
         <surface>
           <contact>
             <ode>
-              <min_depth>0.001</min_depth>
-              <max_vel>0</max_vel>
             </ode>
           </contact>
           <friction>
@@ -470,8 +460,6 @@
         <surface>
           <contact>
             <ode>
-              <min_depth>0.001</min_depth>
-              <max_vel>0</max_vel>
             </ode>
           </contact>
           <friction>
@@ -523,8 +511,6 @@
         <surface>
           <contact>
             <ode>
-              <min_depth>0.001</min_depth>
-              <max_vel>0</max_vel>
             </ode>
           </contact>
           <friction>
@@ -576,8 +562,6 @@
         <surface>
           <contact>
             <ode>
-              <min_depth>0.001</min_depth>
-              <max_vel>0</max_vel>
             </ode>
           </contact>
           <friction>

@@ -167,12 +167,12 @@
         <pose>1e-06 -0 -0.00116 0 -0 0</pose>
         <mass>0.012</mass>
         <inertia>
-          <ixx>0.00062486</ixx>
+          <ixx>7.60115e-05</ixx>
           <ixy>0</ixy>
-          <ixz>-0</ixz>
-          <iyy>0.00144566</iyy>
+          <ixz>0</ixz>
+          <iyy>0.00199518</iyy>
           <iyz>0</iyz>
-          <izz>0.00205594</izz>
+          <izz>0.00205661</izz>
         </inertia>
       </inertial>
       <collision name='rotor1_link_collision'>
@@ -236,12 +236,12 @@
         <pose>-1e-06 0 -0.00116 0 -0 0</pose>
         <mass>0.012</mass>
         <inertia>
-          <ixx>0.000108566</ixx>
+          <ixx>7.60115e-05</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00196192</iyy>
+          <iyy>0.00199518</iyy>
           <iyz>0</iyz>
-          <izz>0.0020559</izz>
+          <izz>0.00205661</izz>
         </inertia>
       </inertial>
       <collision name='rotor2_link_collision'>
@@ -305,10 +305,10 @@
         <pose>0 -0 -0.00116 0 -0 0</pose>
         <mass>0.012</mass>
         <inertia>
-          <ixx>0.00136352</ixx>
+          <ixx>7.60115e-05</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.000707677</iyy>
+          <iyy>0.00199518</iyy>
           <iyz>0</iyz>
           <izz>0.00205661</izz>
         </inertia>
@@ -374,12 +374,12 @@
         <pose>0 -0 -0.00116 0 -0 0</pose>
         <mass>0.012</mass>
         <inertia>
-          <ixx>0.0010585</ixx>
+          <ixx>7.60115e-05</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00101199</iyy>
+          <iyy>0.00199518</iyy>
           <iyz>0</iyz>
-          <izz>0.0020559</izz>
+          <izz>0.00205661</izz>
         </inertia>
       </inertial>
       <collision name='rotor4_link_collision'>
@@ -512,12 +512,12 @@
         <pose>-1e-06 0 0.00494 0 -0 0</pose>
         <mass>0.012</mass>
         <inertia>
-          <ixx>0.00062486</ixx>
+          <ixx>7.60115e-05</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00144566</iyy>
+          <iyy>0.00199518</iyy>
           <iyz>0</iyz>
-          <izz>0.00205594</izz>
+          <izz>0.00205661</izz>
         </inertia>
       </inertial>
       <collision name='rotor6_link_collision'>
@@ -581,12 +581,12 @@
         <pose>-1e-06 1e-06 0.00494 0 -0 0</pose>
         <mass>0.012</mass>
         <inertia>
-          <ixx>0.00108862</ixx>
+          <ixx>7.60115e-05</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.000981859</iyy>
+          <iyy>0.00199518</iyy>
           <iyz>0</iyz>
-          <izz>0.0020559</izz>
+          <izz>0.00205661</izz>
         </inertia>
       </inertial>
       <collision name='rotor7_link_collision'>
@@ -650,12 +650,12 @@
         <pose>0 -0 0.00494 0 -0 0</pose>
         <mass>0.012</mass>
         <inertia>
-          <ixx>0.000980741</ixx>
+          <ixx>7.60115e-05</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00108974</iyy>
+          <iyy>0.00199518</iyy>
           <iyz>0</iyz>
-          <izz>0.0020559</izz>
+          <izz>0.00205661</izz>
         </inertia>
       </inertial>
       <collision name='rotor8_link_collision'>

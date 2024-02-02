@@ -15,60 +15,6 @@
           <izz>0.142881</izz>
         </inertia>
       </inertial>
-      <!-- 
-      <visual name='base_link_fixed_joint_lump__pcb_link_visual_1'>
-        <pose>-0.202281 -0.00167 -0.206791 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/pcb_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/DarkGrey</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>-->
-      <visual name='base_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/base_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/DarkGrey</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
-      <!-- 
-      <visual name='base_link_fixed_joint_lump__water_link_visual_2'>
-        <pose>-0.32518 0.02883 -0.21379 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/water_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
-      -->
       <collision name='base_link_collision'>
         <pose>0 0 -0.18 0 -0 0</pose>
         <geometry>
@@ -88,6 +34,61 @@
           </friction>
         </surface>
       </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <!-- 
+      <visual name='base_link_fixed_joint_lump__pcb_link_visual_1'>
+        <pose>-0.202281 -0.00167 -0.206791 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/pcb_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>-->
+
+      <!-- 
+      <visual name='base_link_fixed_joint_lump__water_link_visual_2'>
+        <pose>-0.32518 0.02883 -0.21379 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/water_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      -->
       <!-- 
       <collision name='base_link_fixed_joint_lump__pcb_link_collision_1'>
         <pose>-0.202281 -0.00167 -0.206791 0 -0 0</pose>
@@ -130,11 +131,10 @@
       <gravity>1</gravity>
       <velocity_decay />
     </link>
-
     <link name='/imu_link'>
       <pose>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 0.02 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <mass>0.015</mass>
         <inertia>
           <ixx>1e-05</ixx>
@@ -146,7 +146,6 @@
         </inertia>
       </inertial>
     </link>
-
     <joint name='/imu_joint' type='revolute'>
       <child>/imu_link</child>
       <parent>base_link</parent>

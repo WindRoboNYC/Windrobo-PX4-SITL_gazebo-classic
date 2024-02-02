@@ -175,23 +175,6 @@
           <izz>0.00205594</izz>
         </inertia>
       </inertial>
-      <visual name='rotor1_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/rotor1_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
       <collision name='rotor1_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -210,6 +193,23 @@
           </friction>
         </surface>
       </collision>
+      <visual name='rotor1_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/rotor1_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
       <gravity>1</gravity>
       <velocity_decay />
     </link>
@@ -244,23 +244,6 @@
           <izz>0.0020559</izz>
         </inertia>
       </inertial>
-      <visual name='rotor2_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/rotor2_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
       <collision name='rotor2_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -279,6 +262,23 @@
           </friction>
         </surface>
       </collision>
+      <visual name='rotor2_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/rotor2_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
       <gravity>1</gravity>
       <velocity_decay />
     </link>
@@ -313,23 +313,6 @@
           <izz>0.00205661</izz>
         </inertia>
       </inertial>
-      <visual name='rotor3_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/rotor3_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
       <collision name='rotor3_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -348,6 +331,23 @@
           </friction>
         </surface>
       </collision>
+      <visual name='rotor3_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/rotor3_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
       <gravity>1</gravity>
       <velocity_decay />
     </link>
@@ -382,23 +382,6 @@
           <izz>0.0020559</izz>
         </inertia>
       </inertial>
-      <visual name='rotor4_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/rotor4_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
       <collision name='rotor4_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -417,6 +400,23 @@
           </friction>
         </surface>
       </collision>
+      <visual name='rotor4_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/rotor4_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
       <gravity>1</gravity>
       <velocity_decay />
     </link>
@@ -429,8 +429,6 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
-          <effort>0.0001</effort>
-          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -453,23 +451,6 @@
           <izz>0.00205661</izz>
         </inertia>
       </inertial>
-      <visual name='rotor5_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/rotor5_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
       <collision name='rotor5_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -488,6 +469,23 @@
           </friction>
         </surface>
       </collision>
+      <visual name='rotor5_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/rotor5_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
       <gravity>1</gravity>
       <velocity_decay />
     </link>
@@ -522,23 +520,6 @@
           <izz>0.00205594</izz>
         </inertia>
       </inertial>
-      <visual name='rotor6_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/rotor6_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
       <collision name='rotor6_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -557,6 +538,23 @@
           </friction>
         </surface>
       </collision>
+      <visual name='rotor6_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/rotor6_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
       <gravity>1</gravity>
       <velocity_decay />
     </link>
@@ -591,23 +589,6 @@
           <izz>0.0020559</izz>
         </inertia>
       </inertial>
-      <visual name='rotor7_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/rotor7_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
       <collision name='rotor7_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -626,6 +607,23 @@
           </friction>
         </surface>
       </collision>
+      <visual name='rotor7_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/rotor7_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
       <gravity>1</gravity>
       <velocity_decay />
     </link>
@@ -660,23 +658,6 @@
           <izz>0.0020559</izz>
         </inertia>
       </inertial>
-      <visual name='rotor8_link_visual'>
-        <pose>0 0 0 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/rotor8_link.STL</uri>
-          </mesh>
-        </geometry>
-        <material>
-          <script>
-            <name>Gazebo/Blue</name>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-          </script>
-        </material>
-        <transparency>0</transparency>
-        <cast_shadows>1</cast_shadows>
-      </visual>
       <collision name='rotor8_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -695,6 +676,23 @@
           </friction>
         </surface>
       </collision>
+      <visual name='rotor8_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/rotor8_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
       <gravity>1</gravity>
       <velocity_decay />
     </link>

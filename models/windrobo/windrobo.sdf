@@ -220,8 +220,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -289,8 +289,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -358,8 +358,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -427,8 +427,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
           <effort>0.0001</effort>
           <velocity>0</velocity>
         </limit>
@@ -498,8 +498,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -567,8 +567,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -636,8 +636,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -705,8 +705,8 @@
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1e+09</lower>
-          <upper>1e+09</upper>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>

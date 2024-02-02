@@ -1,6 +1,6 @@
 <sdf version='1.6'>
   <model name='windrobo'>
-    <pose>0 0 0.6 0 0 0</pose>
+    <!-- <pose>0 0 0.6 0 0 0</pose>-->
     <link name='base_link'>
       <inertial>
         <pose>-0.011986 0.017766 -0.034181 0 -0 0</pose>

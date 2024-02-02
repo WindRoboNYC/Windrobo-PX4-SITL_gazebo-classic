@@ -2,6 +2,7 @@
   <model name='windrobo'>
     <!-- <pose>0 0 0.6 0 0 0</pose>-->
     <link name='base_link'>
+      <pose>0 0 0 0 0 0</pose>
       <inertial>
         <pose>-0.011986 0.017766 -0.034181 0 -0 0</pose>
         <mass>25</mass>

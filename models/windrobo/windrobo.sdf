@@ -122,14 +122,14 @@
           </friction>
         </surface>
       </collision>
-      <velocity_decay />
       <gravity>1</gravity>
+      <velocity_decay />
     </link>
 
     <link name='/imu_link'>
       <pose>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0.02 0 0 0</pose>
         <mass>0.015</mass>
         <inertia>
           <ixx>1e-05</ixx>

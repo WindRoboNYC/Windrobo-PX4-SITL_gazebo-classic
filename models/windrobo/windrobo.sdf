@@ -444,7 +444,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name='rotor_8_joint' type='revolute'>
+    <joint name='rotor8_joint' type='revolute'>
       <pose relative_to='base_link'>-0.39219 0.38736 -0.064619 0 -0 0</pose>
       <parent>base_link</parent>
       <child>rotor8_link</child>
@@ -461,7 +461,7 @@
       </axis>
     </joint>
     <link name='rotor8_link'>
-      <pose relative_to='rotor_8_joint'>0 0 0 0 -0 0</pose>
+      <pose relative_to='rotor8_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>1e-06 -1e-06 0.00494 0 -0 0</pose>
         <mass>0.032</mass>

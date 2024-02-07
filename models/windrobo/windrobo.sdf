@@ -852,7 +852,7 @@
     <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
       <robotNamespace />
       <linkName>base_link</linkName>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor_1' filename='libgazebo_motor_model.so'>
       <robotNamespace />
@@ -869,7 +869,7 @@
       <rotorDragCoefficient>0.000919012</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/0</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor_2' filename='libgazebo_motor_model.so'>
       <robotNamespace />
@@ -886,7 +886,7 @@
       <rotorDragCoefficient>0.000919012</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/1</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor_3' filename='libgazebo_motor_model.so'>
       <robotNamespace />
@@ -903,7 +903,7 @@
       <rotorDragCoefficient>0.000919012</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/2</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor_4' filename='libgazebo_motor_model.so'>
       <robotNamespace />
@@ -920,7 +920,7 @@
       <rotorDragCoefficient>0.000919012</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/3</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor_5' filename='libgazebo_motor_model.so'>
       <robotNamespace />
@@ -937,7 +937,7 @@
       <rotorDragCoefficient>0.000919012</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/4</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor_6' filename='libgazebo_motor_model.so'>
       <robotNamespace />
@@ -954,7 +954,7 @@
       <rotorDragCoefficient>0.000919012</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/5</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor_7' filename='libgazebo_motor_model.so'>
       <robotNamespace />
@@ -971,7 +971,7 @@
       <rotorDragCoefficient>0.000919012</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/6</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor_8' filename='libgazebo_motor_model.so'>
       <robotNamespace />
@@ -988,7 +988,7 @@
       <rotorDragCoefficient>0.000919012</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
       <motorSpeedPubTopic>/motor_speed/7</motorSpeedPubTopic>
-      <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
+      <rotorVelocitySlowdownSim>40</rotorVelocitySlowdownSim>
     </plugin>
     <include>
       <uri>model://gps</uri>

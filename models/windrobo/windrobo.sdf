@@ -493,7 +493,7 @@
         </geometry>
       </visual>
     </link>
-    <joint name='servo1_joint' type='prismatic'>
+    <!-- <joint name='servo1_joint' type='prismatic'>
       <pose relative_to='base_link'>-8.2e-05 -0.001169 0 0 -0 0</pose>
       <parent>base_link</parent>
       <child>servo1_link</child>
@@ -567,7 +567,7 @@
           <izz>0.0066712</izz>
         </inertia>
       </inertial>
-      <!-- <collision name='servo2_link_collision'>
+      <collision name='servo2_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -575,7 +575,7 @@
             <uri>model://windrobo/meshes/servo2_link.STL</uri>
           </mesh>
         </geometry>
-      </collision> -->
+      </collision>
       <visual name='servo2_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -669,7 +669,7 @@
           <izz>6.3034e-05</izz>
         </inertia>
       </inertial>
-      <!-- <collision name='servo4_link_collision'>
+      <collision name='servo4_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -677,7 +677,7 @@
             <uri>model://windrobo/meshes/servo4_link.STL</uri>
           </mesh>
         </geometry>
-      </collision> -->
+      </collision>
       <visual name='servo4_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -720,7 +720,7 @@
           <izz>2.7749e-06</izz>
         </inertia>
       </inertial>
-      <!-- <collision name='servo5_link_collision'>
+      <collision name='servo5_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -728,7 +728,7 @@
             <uri>model://windrobo/meshes/servo5_link.STL</uri>
           </mesh>
         </geometry>
-      </collision> -->
+      </collision>
       <visual name='servo5_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -771,7 +771,7 @@
           <izz>4.439e-07</izz>
         </inertia>
       </inertial>
-      <!-- <collision name='servo6_link_collision'>
+      <collision name='servo6_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -779,7 +779,7 @@
             <uri>model://windrobo/meshes/servo6_link.STL</uri>
           </mesh>
         </geometry>
-      </collision> -->
+      </collision>
       <visual name='servo6_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -822,7 +822,7 @@
           <izz>0.0001534</izz>
         </inertia>
       </inertial>
-      <!-- <collision name='servo7_link_collision'>
+      <collision name='servo7_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -830,7 +830,7 @@
             <uri>model://windrobo/meshes/servo7_link.STL</uri>
           </mesh>
         </geometry>
-      </collision> -->
+      </collision>
       <visual name='servo7_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -840,7 +840,7 @@
           </mesh>
         </geometry>
       </visual>
-    </link>
+    </link> -->
     <frame name='pcb_joint' attached_to='base_link'>
       <pose>-0.20228 -0.00167 -0.20679 0 -0 0</pose>
     </frame>

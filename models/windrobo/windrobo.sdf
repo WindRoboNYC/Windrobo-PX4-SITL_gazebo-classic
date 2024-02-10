@@ -493,7 +493,7 @@
         </geometry>
       </visual>
     </link>
-    <!-- <joint name='servo1_joint' type='prismatic'>
+    <joint name='servo1_joint' type='prismatic'>
       <pose relative_to='base_link'>-8.2e-05 -0.001169 0 0 -0 0</pose>
       <parent>base_link</parent>
       <child>servo1_link</child>
@@ -840,7 +840,7 @@
           </mesh>
         </geometry>
       </visual>
-    </link> -->
+    </link>
     <frame name='pcb_joint' attached_to='base_link'>
       <pose>-0.20228 -0.00167 -0.20679 0 -0 0</pose>
     </frame>

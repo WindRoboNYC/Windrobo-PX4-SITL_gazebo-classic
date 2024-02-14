@@ -864,7 +864,7 @@
         </limit>
       </axis>
     </joint>
-    <link name="ultrasonic_link">
+    <!-- <link name="ultrasonic_link">
       <pose>0 0.16 0.367 0 0 -1.57</pose>
       <inertial>
         <mass>0.015</mass>
@@ -895,11 +895,11 @@
             <max>3.5</max>
             <resolution>0.0001</resolution>
           </range>
-          <!-- <noise>
+          <noise>
             <type>gaussian</type>
             <mean>0.0</mean>
             <stddev>0.0001</stddev>
-          </noise> -->
+          </noise>
         </ray>
         <plugin name="ultrasonic_sensor_1" filename="libgazebo_ros_ray_sensor.so">
           <ros>
@@ -914,7 +914,7 @@
     <joint name='ultrasonic_joint' type='fixed'>
       <child>ultrasonic_link</child>
       <parent>base_link</parent>
-    </joint>
+    </joint> -->
     <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
       <robotNamespace />
       <linkName>base_link</linkName>

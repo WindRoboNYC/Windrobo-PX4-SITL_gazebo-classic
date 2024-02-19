@@ -34,7 +34,7 @@
             </ode>
           </contact>
           <friction>
-            <ode/>
+            <ode />
           </friction>
         </surface>
       </collision>
@@ -146,7 +146,7 @@
       </visual>
       -->
       <gravity>1</gravity>
-      <velocity_decay/>
+      <velocity_decay />
       <self_collide>0</self_collide>
     </link>
 
@@ -387,11 +387,11 @@
       <sensor name="camera" type="camera">
         <pose>0.0 0 -0.162 0 0 0</pose>
         <camera>
-          <horizontal_fov>2.0</horizontal_fov>
+          <horizontal_fov>1.286</horizontal_fov>
           <image>
             <format>R8G8B8</format>
-            <width>640</width>
-            <height>360</height>
+            <width>5472</width> <!--640 -->
+            <height>3648</height> <!--360 -->
           </image>
           <clip>
             <near>0.05</near>
@@ -402,20 +402,20 @@
         <update_rate>10</update_rate>
         <visualize>true</visualize>
         <plugin name="GstCameraPlugin" filename="libgazebo_gst_camera_plugin.so">
-            <robotNamespace></robotNamespace>
-            <udpHost>127.0.0.1</udpHost>
-            <udpPort>{{ gst_udp_port }}</udpPort>
+          <robotNamespace></robotNamespace>
+          <udpHost>127.0.0.1</udpHost>
+          <udpPort>{{ gst_udp_port }}</udpPort>
         </plugin>
         <plugin name="CameraManagerPlugin" filename="libgazebo_camera_manager_plugin.so">
-            <robotNamespace>typhoon_h480</robotNamespace>
-            <interval>1</interval>
-            <width>3840</width>
-            <height>2160</height>
-            <maximum_zoom>8.0</maximum_zoom>
-            <video_uri>{{ video_uri }}</video_uri>
-            <system_id>{{ mavlink_id }}</system_id>
-            <cam_component_id>{{ cam_component_id }}</cam_component_id>
-            <mavlink_cam_udp_port>{{ mavlink_cam_udp_port }}</mavlink_cam_udp_port>
+          <robotNamespace>typhoon_h480</robotNamespace>
+          <interval>1</interval>
+          <width>3840</width>
+          <height>2160</height>
+          <maximum_zoom>8.0</maximum_zoom>
+          <video_uri>{{ video_uri }}</video_uri>
+          <system_id>{{ mavlink_id }}</system_id>
+          <cam_component_id>{{ cam_component_id }}</cam_component_id>
+          <mavlink_cam_udp_port>{{ mavlink_cam_udp_port }}</mavlink_cam_udp_port>
         </plugin>
       </sensor>
     </link>
@@ -718,10 +718,10 @@
         </geometry>
         <surface>
           <contact>
-            <ode/>
+            <ode />
           </contact>
           <friction>
-            <ode/>
+            <ode />
           </friction>
         </surface>
       </collision>
@@ -741,7 +741,7 @@
         </material>
       </visual>
       <gravity>1</gravity>
-      <velocity_decay/>
+      <velocity_decay />
       <self_collide>0</self_collide>
     </link>
     <joint name='rotor_3_joint' type='revolute'>
@@ -790,10 +790,10 @@
         </geometry>
         <surface>
           <contact>
-            <ode/>
+            <ode />
           </contact>
           <friction>
-            <ode/>
+            <ode />
           </friction>
         </surface>
       </collision>
@@ -813,7 +813,7 @@
         </material>
       </visual>
       <gravity>1</gravity>
-      <velocity_decay/>
+      <velocity_decay />
       <self_collide>0</self_collide>
     </link>
     <joint name='rotor_0_joint' type='revolute'>
@@ -862,10 +862,10 @@
         </geometry>
         <surface>
           <contact>
-            <ode/>
+            <ode />
           </contact>
           <friction>
-            <ode/>
+            <ode />
           </friction>
         </surface>
       </collision>
@@ -885,7 +885,7 @@
         </material>
       </visual>
       <gravity>1</gravity>
-      <velocity_decay/>
+      <velocity_decay />
       <self_collide>0</self_collide>
     </link>
     <joint name='rotor_4_joint' type='revolute'>
@@ -934,10 +934,10 @@
         </geometry>
         <surface>
           <contact>
-            <ode/>
+            <ode />
           </contact>
           <friction>
-            <ode/>
+            <ode />
           </friction>
         </surface>
       </collision>
@@ -957,7 +957,7 @@
         </material>
       </visual>
       <gravity>1</gravity>
-      <velocity_decay/>
+      <velocity_decay />
       <self_collide>0</self_collide>
     </link>
     <joint name='rotor_1_joint' type='revolute'>
@@ -1007,10 +1007,10 @@
         </geometry>
         <surface>
           <contact>
-            <ode/>
+            <ode />
           </contact>
           <friction>
-            <ode/>
+            <ode />
           </friction>
         </surface>
       </collision>
@@ -1030,7 +1030,7 @@
         </material>
       </visual>
       <gravity>1</gravity>
-      <velocity_decay/>
+      <velocity_decay />
       <self_collide>0</self_collide>
     </link>
     <joint name='rotor_5_joint' type='revolute'>
@@ -1079,10 +1079,10 @@
         </geometry>
         <surface>
           <contact>
-            <ode/>
+            <ode />
           </contact>
           <friction>
-            <ode/>
+            <ode />
           </friction>
         </surface>
       </collision>
@@ -1102,7 +1102,7 @@
         </material>
       </visual>
       <gravity>1</gravity>
-      <velocity_decay/>
+      <velocity_decay />
       <self_collide>0</self_collide>
     </link>
     <joint name='rotor_2_joint' type='revolute'>
@@ -1264,10 +1264,10 @@
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>
-      <robotNamespace/>
+      <robotNamespace />
     </plugin>
     <plugin name='magnetometer_plugin' filename='libgazebo_magnetometer_plugin.so'>
-      <robotNamespace/>
+      <robotNamespace />
       <pubRate>100</pubRate>
       <noiseDensity>0.0004</noiseDensity>
       <randomWalk>6.4e-06</randomWalk>
@@ -1275,7 +1275,7 @@
       <magTopic>/mag</magTopic>
     </plugin>
     <plugin name='barometer_plugin' filename='libgazebo_barometer_plugin.so'>
-      <robotNamespace/>
+      <robotNamespace />
       <pubRate>50</pubRate>
       <baroTopic>/baro</baroTopic>
     </plugin>
@@ -1340,7 +1340,7 @@
           <zero_position_armed>100</zero_position_armed>
           <joint_control_type>velocity</joint_control_type>
         </channel>
-       <channel name="rotor5">
+        <channel name="rotor5">
           <input_index>5</input_index>
           <input_offset>0</input_offset>
           <input_scaling>1500</input_scaling>

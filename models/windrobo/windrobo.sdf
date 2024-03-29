@@ -1186,10 +1186,9 @@
     </plugin>
     <static>0</static>
 
-    <plugin name="gazebo_ros2_control"
-  filename="libgazebo_ros2_control.so">
-    <parameters>/home/windrobo/windrobo/windrobo_ws/src/windrobo_controller/config/windrobo_controller.yaml</parameters>
-  </plugin>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <parameters>/home/windrobo/windrobo/windrobo_ws/src/windrobo_controller/config/windrobo_controller.yaml</parameters>
+    </plugin>
 
   </model>
 </sdf>

@@ -501,13 +501,15 @@
         <xyz>0 0 1</xyz>
         <limit>
           <lower>-0.32271</lower>
-          <upper>0</upper>
-          <effort>1000</effort>
+          <upper>-0.1502</upper>
+          <effort>10</effort>
           <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>10</damping>  <!-- effctrl: 10 -->
+          <friction>100</friction>  <!-- last 10 -->
         </dynamics>
       </axis>
     </joint>
@@ -544,12 +546,14 @@
         <limit>
           <lower>-1.6581</lower>
           <upper>1.7453</upper>
-          <effort>30</effort>
-          <velocity>0</velocity>
+          <effort>10</effort>
+          <velocity>1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>6</damping> <!-- effctrl: 4 -->
+          <friction>10</friction> <!-- effctrl: 10 -->
         </dynamics>
       </axis>
     </joint>
@@ -601,6 +605,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>0.75</damping> <!-- effctrl: 2.2 -->
+          <friction>10</friction> <!-- effctrl: 20 -->
         </dynamics>
       </axis>
     </joint>
@@ -652,6 +658,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>0.4</damping> <!-- effctrl: 1 -->
+          <friction>10</friction> <!-- effctrl: 10 -->
         </dynamics>
       </axis>
     </joint>
@@ -703,6 +711,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>0.2</damping>
+          <friction>10</friction>
         </dynamics>
       </axis>
     </joint>
@@ -754,6 +764,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>0.1</damping>
+          <friction>3</friction>
         </dynamics>
       </axis>
     </joint>
@@ -805,6 +817,8 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
+          <damping>0.1</damping>
+          <friction>3</friction>
         </dynamics>
       </axis>
     </joint>

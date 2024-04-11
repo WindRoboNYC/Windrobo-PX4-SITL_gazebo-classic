@@ -1,17 +1,16 @@
-<?xml version="1.0"?>
-<sdf version="1.7">
+<sdf version='1.7'>
   <model name='windrobo'>
     <link name='base_link'>
       <inertial>
-        <pose>-0.029907 -0.001148 -0.033059 0 -0 0</pose>
-        <mass>19</mass>
+        <pose>-0.025862 -0.001149 -0.030205 0 -0 0</pose>
+        <mass>19.946</mass>
         <inertia>
-          <ixx>1.42002215</ixx>
-          <ixy>-0.00391508</ixy>
-          <ixz>-0.00041755</ixz>
-          <iyy>1.50250178</iyy>
-          <iyz>0.03239674</iyz>
-          <izz>1.90699933</izz>
+          <ixx>1.45106</ixx>
+          <ixy>-0.00390923</ixy>
+          <ixz>-0.0393941</ixz>
+          <iyy>1.59223</iyy>
+          <iyz>0.0324063</iyz>
+          <izz>1.96886</izz>
         </inertia>
       </inertial>
       <collision name='base_link_collision'>
@@ -110,6 +109,8 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -121,14 +122,14 @@
       <pose relative_to='rotor1_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 -0 -0.00116 0 -0 0</pose>
-        <mass>0.032</mass>
+        <mass>0.30209</mass>
         <inertia>
-          <ixx>9.75e-07</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.000166704</iyy>
-          <iyz>0</iyz>
-          <izz>0.000167604</izz>
+          <ixx>0.00062486</ixx>
+          <ixy>0.00087885</ixy>
+          <ixz>-4.2628e-10</ixz>
+          <iyy>0.0014457</iyy>
+          <iyz>1.9606e-10</iyz>
+          <izz>0.0020559</izz>
         </inertia>
       </inertial>
       <collision name='rotor1_link_collision'>
@@ -159,6 +160,8 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -172,12 +175,12 @@
         <pose>-1e-06 0 -0.00116 0 -0 0</pose>
         <mass>0.302086</mass>
         <inertia>
-          <ixx>9.75e-07</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.000166704</iyy>
-          <iyz>0</iyz>
-          <izz>0.000167604</izz>
+          <ixx>0.000108566</ixx>
+          <ixy>0.000286451</ixy>
+          <ixz>3.66324e-10</ixz>
+          <iyy>0.00196192</iyy>
+          <iyz>-1.15198e-10</iyz>
+          <izz>0.0020559</izz>
         </inertia>
       </inertial>
       <collision name='rotor2_link_collision'>
@@ -208,6 +211,8 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -219,14 +224,14 @@
       <pose relative_to='rotor3_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0 0 -0.00116 0 -0 0</pose>
-        <mass>0.032</mass>
+        <mass>0.302082</mass>
         <inertia>
-          <ixx>9.75e-07</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.000166704</iyy>
-          <iyz>0</iyz>
-          <izz>0.000167604</izz>
+          <ixx>0.00136351</ixx>
+          <ixy>0.00091317</ixy>
+          <ixz>7.78262e-11</ixz>
+          <iyy>0.000707675</iyy>
+          <iyz>-2.15688e-10</iyz>
+          <izz>0.00205661</izz>
         </inertia>
       </inertial>
       <collision name='rotor3_link_collision'>
@@ -257,6 +262,8 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -268,14 +275,14 @@
       <pose relative_to='rotor4_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 -0 -0.00116 0 -0 0</pose>
-        <mass>0.032</mass>
+        <mass>0.302081</mass>
         <inertia>
-          <ixx>9.75e-07</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.000166704</iyy>
-          <iyz>0</iyz>
-          <izz>0.000167604</izz>
+          <ixx>0.00105849</ixx>
+          <ixy>0.000969655</ixy>
+          <ixz>3.49932e-10</ixz>
+          <iyy>0.00101198</iyy>
+          <iyz>-2.68638e-10</iyz>
+          <izz>0.00205589</izz>
         </inertia>
       </inertial>
       <collision name='rotor4_link_collision'>
@@ -306,6 +313,8 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -317,14 +326,14 @@
       <pose relative_to='rotor5_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0 0 0.00494 0 -0 0</pose>
-        <mass>0.032</mass>
+        <mass>0.30205</mass>
         <inertia>
-          <ixx>9.75e-07</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.000166704</iyy>
-          <iyz>0</iyz>
-          <izz>0.000167604</izz>
+          <ixx>7.60116e-05</ixx>
+          <ixy>-0.000143574</ixy>
+          <ixz>1.09097e-10</ixz>
+          <iyy>0.00199518</iyy>
+          <iyz>3.20564e-11</iyz>
+          <izz>0.00205661</izz>
         </inertia>
       </inertial>
       <collision name='rotor5_link_collision'>
@@ -355,6 +364,8 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -366,14 +377,14 @@
       <pose relative_to='rotor6_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0 0 0.00494 0 -0 0</pose>
-        <mass>0.032</mass>
+        <mass>0.30209</mass>
         <inertia>
-          <ixx>9.75e-07</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.000166704</iyy>
-          <iyz>0</iyz>
-          <izz>0.000167604</izz>
+          <ixx>0.000624856</ixx>
+          <ixy>0.00087885</ixy>
+          <ixz>1.64607e-10</ixz>
+          <iyy>0.00144565</iyy>
+          <iyz>5.63007e-11</iyz>
+          <izz>0.00205593</izz>
         </inertia>
       </inertial>
       <collision name='rotor6_link_collision'>
@@ -404,6 +415,8 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -415,14 +428,14 @@
       <pose relative_to='rotor7_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>-0 0 0.00494 0 -0 0</pose>
-        <mass>0.032</mass>
+        <mass>0.302081</mass>
         <inertia>
-          <ixx>9.75e-07</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.000166704</iyy>
-          <iyz>0</iyz>
-          <izz>0.000167604</izz>
+          <ixx>0.00108861</ixx>
+          <ixy>0.000968459</ixy>
+          <ixz>1.42801e-12</ixz>
+          <iyy>0.000981849</iyy>
+          <iyz>-4.58883e-13</iyz>
+          <izz>0.00205588</izz>
         </inertia>
       </inertial>
       <collision name='rotor7_link_collision'>
@@ -453,6 +466,8 @@
         <limit>
           <lower>-1e+16</lower>
           <upper>1e+16</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -464,14 +479,14 @@
       <pose relative_to='rotor8_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>1e-06 -1e-06 0.00494 0 -0 0</pose>
-        <mass>0.032</mass>
+        <mass>0.30209</mass>
         <inertia>
-          <ixx>9.75e-07</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.000166704</iyy>
-          <iyz>0</iyz>
-          <izz>0.000167604</izz>
+          <ixx>0.00098075</ixx>
+          <ixy>0.00096841</ixy>
+          <ixz>-4.0247e-10</ixz>
+          <iyy>0.0010897</iyy>
+          <iyz>2.8663e-10</iyz>
+          <izz>0.0020559</izz>
         </inertia>
       </inertial>
       <collision name='rotor8_link_collision'>
@@ -503,13 +518,11 @@
           <lower>-0.32271</lower>
           <upper>-0.1502</upper>
           <effort>10</effort>
-          <velocity>0</velocity>
+          <velocity>100</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>10</damping>  <!-- effctrl: 10 -->
-          <friction>100</friction>  <!-- last 10 -->
         </dynamics>
       </axis>
     </joint>
@@ -527,6 +540,15 @@
           <izz>0.00112052</izz>
         </inertia>
       </inertial>
+      <collision name='servo1_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/servo1_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
       <visual name='servo1_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -552,8 +574,6 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>6</damping> <!-- effctrl: 4 -->
-          <friction>10</friction> <!-- effctrl: 10 -->
         </dynamics>
       </axis>
     </joint>
@@ -600,13 +620,11 @@
           <lower>-2.1817</lower>
           <upper>2.1817</upper>
           <effort>10</effort>
-          <velocity>0</velocity>
+          <velocity>5</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0.75</damping> <!-- effctrl: 2.2 -->
-          <friction>10</friction> <!-- effctrl: 20 -->
         </dynamics>
       </axis>
     </joint>
@@ -653,13 +671,11 @@
           <lower>-2.618</lower>
           <upper>2.618</upper>
           <effort>10</effort>
-          <velocity>0</velocity>
+          <velocity>10</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0.4</damping> <!-- effctrl: 1 -->
-          <friction>10</friction> <!-- effctrl: 10 -->
         </dynamics>
       </axis>
     </joint>
@@ -706,13 +722,11 @@
           <lower>-1.8326</lower>
           <upper>1.7802</upper>
           <effort>10</effort>
-          <velocity>0</velocity>
+          <velocity>1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0.2</damping>
-          <friction>10</friction>
         </dynamics>
       </axis>
     </joint>
@@ -759,13 +773,11 @@
           <lower>-2.0944</lower>
           <upper>2.0944</upper>
           <effort>10</effort>
-          <velocity>0</velocity>
+          <velocity>5</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0.1</damping>
-          <friction>3</friction>
         </dynamics>
       </axis>
     </joint>
@@ -812,13 +824,11 @@
           <lower>-0.34907</lower>
           <upper>1.7977</upper>
           <effort>10</effort>
-          <velocity>0</velocity>
+          <velocity>1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>0</spring_stiffness>
-          <damping>0.1</damping>
-          <friction>3</friction>
         </dynamics>
       </axis>
     </joint>
@@ -855,80 +865,7 @@
         </geometry>
       </visual>
     </link>
-    <frame name='pcb_joint' attached_to='base_link'>
-      <pose>-0.20228 -0.00167 -0.20679 0 -0 0</pose>
-    </frame>
-    <frame name='pcb_link' attached_to='pcb_joint' />
-    <frame name='water_joint' attached_to='base_link'>
-      <pose>-0.32518 0.02883 -0.21379 0 -0 0</pose>
-    </frame>
-    <frame name='water_link' attached_to='water_joint' />
-    <include>
-      <uri>model://depth_camera</uri>
-      <pose>0.1 0 0 0 0 0</pose>
-    </include>
-    <joint name="depth_camera_joint" type="revolute">
-      <child>depth_camera::link</child>
-      <parent>base_link</parent>
-      <axis>
-        <xyz>0 0 1</xyz>
-        <limit>
-          <upper>0</upper>
-          <lower>0</lower>
-        </limit>
-      </axis>
-    </joint>
-    <!-- <link name="ultrasonic_link">
-      <pose>0 0.16 0.367 0 0 -1.57</pose>
-      <inertial>
-        <mass>0.015</mass>
-        <inertia>
-          <ixx>1e-05</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>1e-05</iyy>
-          <iyz>0</iyz>
-          <izz>1e-05</izz>
-        </inertia>
-      </inertial>
-      <sensor name="ultrasonic" type="ray">
-        <always_on>true</always_on>
-        <visualize>true</visualize>
-        <update_rate>150</update_rate>
-        <ray>
-          <scan>
-            <horizontal>
-              <samples>5</samples>
-              <resolution>1.000000</resolution>
-              <min_angle>0.000000</min_angle>
-              <max_angle>0</max_angle>
-            </horizontal>
-          </scan>
-          <range>
-            <min>0.6</min>
-            <max>3.5</max>
-            <resolution>0.0001</resolution>
-          </range>
-          <noise>
-            <type>gaussian</type>
-            <mean>0.0</mean>
-            <stddev>0.0001</stddev>
-          </noise>
-        </ray>
-        <plugin name="ultrasonic_sensor_1" filename="libgazebo_ros_ray_sensor.so">
-          <ros>
-            <remapping>~/out:=ultrasonic_sensor_1</remapping>
-          </ros>
-          <output_type>sensor_msgs/Range</output_type>
-          <radiation_type>ultrasound</radiation_type>
-          <frame_name>ultrasonic_link</frame_name>
-        </plugin>
-      </sensor>
-    </link>
-    <joint name='ultrasonic_joint' type='fixed'>
-      <child>ultrasonic_link</child>
-      <parent>base_link</parent>
-    </joint> -->
+
     <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
       <robotNamespace />
       <linkName>base_link</linkName>
@@ -1198,13 +1135,13 @@
       <accelerometerBiasCorrelationTime>300.0</accelerometerBiasCorrelationTime>
       <accelerometerTurnOnBiasSigma>0.196</accelerometerTurnOnBiasSigma>
     </plugin>
-    
-    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+
+    <static>0</static>
+    <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
       <robot_param>robot_description</robot_param>
       <robot_param_node>robot_state_publisher</robot_param_node>
-      <parameters>/src/ros2_environment/windrobo_ws/src/windrobo_controller/config/windrobo_controllers.yaml</parameters>
+      <parameters>/home/windrobo/windrobo/windrobo_ws/src/windrobo_controller/config/windrobo_controllers.yaml</parameters>
     </plugin>
-    <static>0</static>
-
+    <pose>0 0 0.5 0 -0 0</pose>
   </model>
 </sdf>

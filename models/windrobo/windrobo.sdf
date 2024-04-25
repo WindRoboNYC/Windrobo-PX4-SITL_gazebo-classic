@@ -47,6 +47,12 @@
             <uri>model://windrobo/meshes/base_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='base_link_fixed_joint_lump__pcb_link_visual_1'>
         <pose>-0.20228 -0.00167 -0.20679 0 -0 0</pose>
@@ -56,6 +62,12 @@
             <uri>model://windrobo/meshes/pcb_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
       <visual name='base_link_fixed_joint_lump__water_link_visual_2'>
         <pose>-0.32518 0.02883 -0.21379 0 -0 0</pose>
@@ -65,6 +77,12 @@
             <uri>model://windrobo/meshes/water_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <link name='/imu_link'>
@@ -149,6 +167,12 @@
             <uri>model://windrobo/meshes/rotor1_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='rotor2_joint' type='revolute'>
@@ -200,6 +224,12 @@
             <uri>model://windrobo/meshes/rotor2_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='rotor3_joint' type='revolute'>
@@ -251,6 +281,12 @@
             <uri>model://windrobo/meshes/rotor3_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='rotor4_joint' type='revolute'>
@@ -302,6 +338,12 @@
             <uri>model://windrobo/meshes/rotor4_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='rotor5_joint' type='revolute'>
@@ -353,6 +395,12 @@
             <uri>model://windrobo/meshes/rotor5_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='rotor6_joint' type='revolute'>
@@ -404,6 +452,12 @@
             <uri>model://windrobo/meshes/rotor6_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='rotor7_joint' type='revolute'>
@@ -455,6 +509,12 @@
             <uri>model://windrobo/meshes/rotor7_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='rotor8_joint' type='revolute'>
@@ -506,6 +566,12 @@
             <uri>model://windrobo/meshes/rotor8_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Blue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='servo1_joint' type='prismatic'>
@@ -559,6 +625,12 @@
             <uri>model://windrobo/meshes/servo1_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='servo2_joint' type='revolute'>
@@ -612,6 +684,12 @@
             <uri>model://windrobo/meshes/servo2_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='servo3_joint' type='revolute'>
@@ -665,6 +743,12 @@
             <uri>model://windrobo/meshes/servo3_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='servo4_joint' type='revolute'>
@@ -718,6 +802,12 @@
             <uri>model://windrobo/meshes/servo4_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='servo5_joint' type='revolute'>
@@ -771,6 +861,12 @@
             <uri>model://windrobo/meshes/servo5_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <joint name='servo6_joint' type='revolute'>
@@ -824,6 +920,12 @@
             <uri>model://windrobo/meshes/servo6_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link>
     <!-- <joint name='servo7_joint' type='revolute'>
@@ -877,6 +979,12 @@
             <uri>model://windrobo/meshes/servo7_link.STL</uri>
           </mesh>
         </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
       </visual>
     </link> -->
 

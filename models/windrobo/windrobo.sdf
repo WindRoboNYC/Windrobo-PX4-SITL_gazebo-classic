@@ -584,13 +584,13 @@
           <lower>-0.32271</lower>
           <upper>-0.1502</upper>
           <effort>10</effort>
-          <velocity>100</velocity>
+          <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>20</damping>
-          <friction>100</friction>
-          <spring_stiffness>20</spring_stiffness>
+          <damping>10</damping>
+          <friction>2.0</friction>
+          <spring_stiffness>10</spring_stiffness>
         </dynamics>
       </axis>
     </joint>
@@ -600,12 +600,12 @@
         <pose>0.031107 -6.2e-05 -0.000315 0 -0 0</pose>
         <mass>0.9</mass>
         <inertia>
-          <ixx>0.00298453</ixx>
+          <ixx>0.00898453</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00219458</iyy>
+          <iyy>0.00819458</iyy>
           <iyz>0</iyz>
-          <izz>0.00433202</izz>
+          <izz>0.0133202</izz>
         </inertia>
       </inertial>
       <collision name='servo1_link_collision'>
@@ -642,27 +642,27 @@
         <limit>
           <lower>-1.6581</lower>
           <upper>1.7453</upper>
-          <effort>80</effort>
+          <effort>10</effort>
           <velocity>1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>20</damping>
-          <friction>100</friction>
-          <spring_stiffness>20</spring_stiffness>
+          <damping>1.0</damping>
+          <friction>2.0</friction>
+          <spring_stiffness>0.0</spring_stiffness>
         </dynamics>
       </axis>
     </joint>
     <link name='servo2_link'>
       <pose relative_to='servo2_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.19592 -0.004553 -0.005563 0 1.57 </pose>
+        <pose>0.19592 -0.004553 -0.005563 0 1.57 0</pose>
         <mass>1.5</mass>
         <inertia>
           <ixx>0.01441432</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00187321</iyy>
+          <iyy>0.0187321</iyy>
           <iyz>0</iyz>
           <izz>0.0066712</izz>
         </inertia>
@@ -701,14 +701,14 @@
         <limit>
           <lower>-2.1817</lower>
           <upper>2.1817</upper>
-          <effort>80</effort>
-          <velocity>5</velocity>
+          <effort>10</effort>
+          <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>30</damping>
-          <friction>100</friction>
-          <spring_stiffness>20</spring_stiffness>
+          <damping>1.0</damping>
+          <friction>2.0</friction>
+          <spring_stiffness>1.0</spring_stiffness>
         </dynamics>
       </axis>
     </joint>
@@ -760,14 +760,14 @@
         <limit>
           <lower>-2.618</lower>
           <upper>2.618</upper>
-          <effort>80</effort>
+          <effort>10</effort>
           <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>20</damping>
-          <friction>100</friction>
-          <spring_stiffness>20</spring_stiffness>
+          <damping>1.0</damping>
+          <friction>2.0</friction>
+          <spring_stiffness>1.0</spring_stiffness>
         </dynamics>
       </axis>
     </joint>
@@ -819,14 +819,14 @@
         <limit>
           <lower>-1.8326</lower>
           <upper>1.7802</upper>
-          <effort>80</effort>
-          <velocity>1</velocity>
+          <effort>10</effort>
+          <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>20</damping>
-          <friction>100</friction>
-          <spring_stiffness>20</spring_stiffness>
+          <damping>1.0</damping>
+          <friction>2.0</friction>
+          <spring_stiffness>1.0</spring_stiffness>
         </dynamics>
       </axis>
     </joint>
@@ -879,28 +879,28 @@
           <lower>-2.0944</lower>
           <upper>2.0944</upper>
           <effort>10</effort>
-          <velocity>5</velocity>
+          <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <!-- <damping>10</damping>
-          <friction>100</friction> -->
-          <spring_stiffness>0</spring_stiffness>
+          <damping>1.0</damping>
+          <friction>2.0</friction>
+          <spring_stiffness>1.0</spring_stiffness>
         </dynamics>
       </axis>
     </joint>
     <link name='servo6_link'>
       <pose relative_to='servo6_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.005163 9e-06 0.013375 0 0 0</pose>
+        <pose>-0.005163 9e-06 0.013375 0 0 1.57</pose>
         <mass>0.0051803</mass>
         <inertia>
-          <ixx>1.8795e-07</ixx>
-          <ixy>-3.7552e-11</ixy>
-          <ixz>1.1095e-11</ixz>
-          <iyy>2.9754e-07</iyy>
-          <iyz>2.6238e-11</iyz>
-          <izz>4.439e-07</izz>
+          <ixx>0.00005972</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00001908</iyy>
+          <iyz>0</iyz>
+          <izz>0.00006666</izz>
         </inertia>
       </inertial>
       <collision name='servo6_link_collision'>
@@ -937,14 +937,14 @@
         <limit>
           <lower>-0.34907</lower>
           <upper>1.7977</upper>
-          <effort>1</effort>
+          <effort>10</effort>
           <velocity>3.14</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>0.1</damping>
-          <friction>3</friction>
-          <spring_stiffness>0</spring_stiffness>
+          <damping>1.0</damping>
+          <friction>2.0</friction>
+          <spring_stiffness>1.0</spring_stiffness>
         </dynamics>
       </axis>
     </joint>
@@ -952,14 +952,14 @@
       <pose relative_to='servo7_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0.034068 -0.027252 0.002312 0 -0 0</pose>
-        <mass>0.1</mass>
+        <mass>0.3</mass>
         <inertia>
           <ixx>0.00123262</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00112412</iyy>
+          <iyy>0.00075</iyy>
           <iyz>0</iyz>
-          <izz>0.00034713</izz>
+          <izz>0.00075</izz>
         </inertia>
       </inertial>
       <collision name='servo7_link_collision'>

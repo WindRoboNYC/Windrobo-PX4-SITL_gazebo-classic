@@ -15,13 +15,18 @@
     <include>
       <uri>model://sun</uri>
     </include>
-    <!-- A ground plane -->
+    <!-- building bank -->
     <include>
+      <uri>model://building_bank</uri>
+  </include>
+    <!-- A ground plane -->
+    <!-- <include>
       <uri>model://ground_plane</uri>
     </include>
     <include>
       <uri>model://asphalt_plane</uri>
-    </include>
+    </include> -->
+    <!-- custom building-->
     <include>
         <uri>model://building_L14_w2x2_p10x5</uri>
     </include>

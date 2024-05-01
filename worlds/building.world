@@ -18,14 +18,14 @@
     <!-- building bank -->
     <include>
       <uri>model://building_bank</uri>
-  </include>
+    </include>
     <!-- A ground plane -->
-    <!-- <include>
+    <include>
       <uri>model://ground_plane</uri>
     </include>
     <include>
       <uri>model://asphalt_plane</uri>
-    </include> -->
+    </include> 
     <!-- custom building-->
     <include>
         <uri>model://building_L14_w2x2_p10x5</uri>
@@ -33,8 +33,8 @@
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
-      <latitude_deg>3.526627426686593</latitude_deg>
-      <longitude_deg>-76.281548</longitude_deg>
+      <latitude_deg>6.200664093011519</latitude_deg>
+      <longitude_deg>-75.57237759378218</longitude_deg>
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>

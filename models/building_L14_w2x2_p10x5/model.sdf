@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.7'>
   <model name='building_L14_w2x2_p10x5'>
-    <pose>19.9625 0 0 0 0 0.3</pose>
+    <pose>99.9625 0 0 0 0 0.3</pose>
     <link name='Floor_10'>
       <collision name='Floor_10_Collision'>
         <geometry>

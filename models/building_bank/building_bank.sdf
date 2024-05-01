@@ -8,12 +8,12 @@
 
     <static>true</static>
     <link name="building_bank_link">
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 0 1.57 -0 0</pose>
           <collision name="building_bank_collisions">
             <geometry>
               <mesh>
                   <scale>1 1 1</scale>
-                    <uri>model://building_bank/meshes/building_banck_collision.stl</uri>
+                    <uri>model://building_bank/meshes/banco_occidente.obj</uri>
               </mesh>
             </geometry>
             <surface>

@@ -892,7 +892,7 @@
     <link name='servo6_link'>
       <pose relative_to='servo6_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.005163 9e-06 0.013375 0 0 1.57</pose>
+        <pose>-0.005163 9e-06 0.013375 0 0 0</pose>
         <mass>0.0051803</mass>
         <inertia>
           <ixx>0.00005972</ixx>
@@ -928,7 +928,7 @@
         </material>
       </visual>
     </link>
-    <!-- <joint name='servo7_joint' type='revolute'>
+    <joint name='servo7_joint' type='revolute'>
       <pose relative_to='servo6_link'>0.002522 0 0.039828 0.004407 -1.57079 -3.14159</pose>
       <parent>servo6_link</parent>
       <child>servo7_link</child>
@@ -986,7 +986,7 @@
           </script>
         </material>
       </visual>
-    </link> -->
+    </link>
 
     <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
       <robotNamespace />

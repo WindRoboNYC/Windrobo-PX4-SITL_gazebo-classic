@@ -1,0 +1,542 @@
+<sdf version='1.7'>
+  <model name='s500'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.003953 -0.000376 -0.01378 0 -0 0</pose>
+        <mass>1.623</mass>
+        <inertia>
+          <ixx>0.000963403</ixx>
+          <ixy>1.60479e-05</ixy>
+          <ixz>0.000134918</ixz>
+          <iyy>0.00439988</iyy>
+          <iyz>1.67572e-06</iyz>
+          <izz>0.00424632</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__battery_link_collision_1'>
+        <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/battery_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__jetson_link_collision_2'>
+        <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/jetson_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__battery_link_visual_1'>
+        <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/battery_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__jetson_link_visual_2'>
+        <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/jetson_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rotor1_joint' type='revolute'>
+      <pose relative_to='base_link'>0.16254 -0.16286 0.081323 0 -0 1.5708</pose>
+      <parent>base_link</parent>
+      <child>rotor1_link</child>
+      <axis>
+        <xyz>0.073913 0.073913 0.99452</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rotor1_link'>
+      <pose relative_to='rotor1_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.001201 -0.001201 -0.016157 0 -0 0</pose>
+        <mass>0.136</mass>
+        <inertia>
+          <ixx>2.69e-05</ixx>
+          <ixy>-1.5443e-05</ixy>
+          <ixz>1.8889e-06</ixz>
+          <iyy>2.4928e-05</iyy>
+          <iyz>2.0354e-06</iyz>
+          <izz>3.6581e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='rotor1_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/rotor1_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rotor1_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/rotor1_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rotor2_joint' type='revolute'>
+      <pose relative_to='base_link'>-0.16255 0.16223 0.081323 0 -0 1.5708</pose>
+      <parent>base_link</parent>
+      <child>rotor2_link</child>
+      <axis>
+        <xyz>-0.073913 -0.073913 0.99452</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rotor2_link'>
+      <pose relative_to='rotor2_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.001201 0.001201 -0.016157 0 -0 0</pose>
+        <mass>0.136</mass>
+        <inertia>
+          <ixx>3.6821e-05</ixx>
+          <ixy>-1.0976e-05</ixy>
+          <ixz>-8.1957e-07</ixz>
+          <iyy>1.4958e-05</iyy>
+          <iyz>-2.4445e-06</iyz>
+          <izz>3.663e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='rotor2_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/rotor2_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rotor2_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/rotor2_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rotor3_joint' type='revolute'>
+      <pose relative_to='base_link'>0.16254 0.16223 0.081323 0 -0 1.5708</pose>
+      <parent>base_link</parent>
+      <child>rotor3_link</child>
+      <axis>
+        <xyz>-0.073913 0.073913 0.99452</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rotor3_link'>
+      <pose relative_to='rotor3_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.001381 -0.001381 -0.018584 0 -0 0</pose>
+        <mass>0.136</mass>
+        <inertia>
+          <ixx>2.432e-05</ixx>
+          <ixy>-4.2592e-06</ixy>
+          <ixz>5.6348e-07</ixz>
+          <iyy>1.1305e-05</iyy>
+          <iyz>4.0376e-07</iyz>
+          <izz>2.1009e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='rotor3_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/rotor3_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rotor3_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/rotor3_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rotor4_joint' type='revolute'>
+      <pose relative_to='base_link'>-0.16255 -0.16286 0.081323 0 -0 1.5708</pose>
+      <parent>base_link</parent>
+      <child>rotor4_link</child>
+      <axis>
+        <xyz>0.073913 -0.073913 0.99452</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rotor4_link'>
+      <pose relative_to='rotor4_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.001381 0.001381 -0.018584 0 -0 0</pose>
+        <mass>0.136</mass>
+        <inertia>
+          <ixx>1.6275e-05</ixx>
+          <ixy>-7.6351e-06</ixy>
+          <ixz>-2.1651e-07</ixz>
+          <iyy>1.9312e-05</iyy>
+          <iyz>4.423e-07</iyz>
+          <izz>2.1045e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='rotor4_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/rotor4_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rotor4_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/rotor4_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link> 
+    <!-- imu link and joints-->
+    <link name='/imu_link'>
+      <pose>0 0 0.02 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.015</mass>
+        <inertia>
+          <ixx>1e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1e-05</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <joint name='/imu_joint' type='revolute'>
+      <child>/imu_link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <!-- Gps link and joints-->
+    <include>
+      <uri>model://gps</uri>
+      <pose>0.05 0 0.04 0 0 0</pose>
+      <name>gps0</name>
+    </include>
+    <joint name='gps0_joint' type='fixed'>
+      <child>gps0::link</child>
+      <parent>base_link</parent>
+    </joint>
+    <!-- plugins-->
+    <plugin name='rosbag' filename='libgazebo_multirotor_base_plugin.so'>
+      <robotNamespace/>
+      <linkName>base_link</linkName>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+    </plugin>
+    <plugin name='motor1' filename='libgazebo_motor_model.so'>
+      <robotNamespace/>
+      <jointName>rotor1_joint</jointName>
+      <linkName>rotor1_link</linkName>
+      <turningDirection>ccw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>1500</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.06</momentConstant>
+      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
+      <motorNumber>1</motorNumber>
+      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <motorSpeedPubTopic>/motor_speed/1</motorSpeedPubTopic>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+    </plugin>
+    <plugin name='motor2' filename='libgazebo_motor_model.so'>
+      <robotNamespace/>
+      <jointName>rotor2_joint</jointName>
+      <linkName>rotor2_link</linkName>
+      <turningDirection>ccw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>1500</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.06</momentConstant>
+      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
+      <motorNumber>2</motorNumber>
+      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <motorSpeedPubTopic>/motor_speed/2</motorSpeedPubTopic>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+    </plugin>
+    <plugin name='motor3' filename='libgazebo_motor_model.so'>
+      <robotNamespace/>
+      <jointName>rotor3_joint</jointName>
+      <linkName>rotor3_link</linkName>
+      <turningDirection>cw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>1500</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.06</momentConstant>
+      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
+      <motorNumber>3</motorNumber>
+      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <motorSpeedPubTopic>/motor_speed/3</motorSpeedPubTopic>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+    </plugin>
+    <plugin name='motor4' filename='libgazebo_motor_model.so'>
+      <robotNamespace/>
+      <jointName>rotor4_joint</jointName>
+      <linkName>rotor4_link</linkName>
+      <turningDirection>cw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>1500</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.06</momentConstant>
+      <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
+      <motorNumber>4</motorNumber>
+      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <motorSpeedPubTopic>/motor_speed/4</motorSpeedPubTopic>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+    </plugin>
+    <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>
+      <robotNamespace/>
+    </plugin>
+    <plugin name='magnetometer_plugin' filename='libgazebo_magnetometer_plugin.so'>
+      <robotNamespace/>
+      <pubRate>100</pubRate>
+      <noiseDensity>0.0004</noiseDensity>
+      <randomWalk>6.4e-06</randomWalk>
+      <biasCorrelationTime>600</biasCorrelationTime>
+      <magTopic>/mag</magTopic>
+    </plugin>
+    <plugin name='barometer_plugin' filename='libgazebo_barometer_plugin.so'>
+      <robotNamespace/>
+      <pubRate>50</pubRate>
+      <baroTopic>/baro</baroTopic>
+      <baroDriftPaPerSec>0</baroDriftPaPerSec>
+    </plugin>
+    <plugin name='mavlink_interface' filename='libgazebo_mavlink_interface.so'>
+      <robotNamespace></robotNamespace>
+      <imuSubTopic>/imu</imuSubTopic>
+      <magSubTopic>/mag</magSubTopic>
+      <baroSubTopic>/baro</baroSubTopic>
+      <mavlink_addr>INADDR_ANY</mavlink_addr>
+      <mavlink_tcp_port>4560</mavlink_tcp_port>
+      <mavlink_udp_port>14560</mavlink_udp_port>
+      <serialEnabled>0</serialEnabled>
+      <serialDevice>/dev/ttyACM0</serialDevice>
+      <baudRate>921600</baudRate>
+      <qgc_addr>INADDR_ANY</qgc_addr>
+      <qgc_udp_port>14550</qgc_udp_port>
+      <sdk_addr>INADDR_ANY</sdk_addr>
+      <sdk_udp_port>14540</sdk_udp_port>
+      <hil_mode>0</hil_mode>
+      <hil_state_level>false</hil_state_level>
+      <enable_lockstep>true</enable_lockstep>
+      <use_tcp>true</use_tcp>
+      <motorSpeedCommandPubTopic>/gazebo/command/motor_speed</motorSpeedCommandPubTopic>
+      <control_channels>
+        <channel name="rotor0">
+          <input_index>0</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>1500</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>100</zero_position_armed>
+          <joint_control_type>velocity</joint_control_type>
+        </channel>
+        <channel name="rotor1">
+          <input_index>1</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>1500</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>100</zero_position_armed>
+          <joint_control_type>velocity</joint_control_type>
+        </channel>
+        <channel name="rotor2">
+          <input_index>2</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>1500</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>100</zero_position_armed>
+          <joint_control_type>velocity</joint_control_type>
+        </channel>
+        <channel name="rotor3">
+          <input_index>3</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>1500</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>100</zero_position_armed>
+          <joint_control_type>velocity</joint_control_type>
+        </channel>
+        <channel name="rotor4">
+          <input_index>4</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>1500</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>100</zero_position_armed>
+          <joint_control_type>velocity</joint_control_type>
+        </channel>
+        <channel name="rotor5">
+          <input_index>5</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>1500</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>100</zero_position_armed>
+          <joint_control_type>velocity</joint_control_type>
+        </channel>
+        <channel name="gimbal_roll">
+          <input_index>6</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>-3.1415</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>0</zero_position_armed>
+          <joint_control_type>position_gztopic</joint_control_type>
+          <gztopic>/gimbal_roll_cmd</gztopic>
+          <joint_name>typhoon_h480::cgo3_camera_joint</joint_name>
+        </channel>
+        <channel name="gimbal_pitch">
+          <input_index>7</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>-3.1415</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>0</zero_position_armed>
+          <joint_control_type>position_gztopic</joint_control_type>
+          <gztopic>/gimbal_pitch_cmd</gztopic>
+          <joint_name>typhoon_h480::cgo3_camera_joint</joint_name>
+        </channel>
+        <channel name="gimbal_yaw">
+          <input_index>8</input_index>
+          <input_offset>0</input_offset>
+          <input_scaling>-3.1415</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>0</zero_position_armed>
+          <joint_control_type>position_gztopic</joint_control_type>
+          <gztopic>/gimbal_yaw_cmd</gztopic>
+          <joint_name>typhoon_h480::cgo3_vertical_arm_joint</joint_name>
+        </channel>
+        <channel name="left_leg">
+          <input_index>9</input_index>
+          <input_offset>1</input_offset>
+          <input_scaling>0.5</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>0</zero_position_armed>
+          <joint_control_type>position</joint_control_type>
+          <joint_control_pid>
+            <p>3.5</p>
+            <i>0.5</i>
+            <d>0</d>
+            <iMax>4</iMax>
+            <iMin>-4</iMin>
+            <cmdMax>6</cmdMax>
+            <cmdMin>-6</cmdMin>
+          </joint_control_pid>
+          <joint_name>left_leg_joint</joint_name>
+        </channel>
+        <channel name="right_leg">
+          <input_index>10</input_index>
+          <input_offset>1</input_offset>
+          <input_scaling>0.5</input_scaling>
+          <zero_position_disarmed>0</zero_position_disarmed>
+          <zero_position_armed>0</zero_position_armed>
+          <joint_control_type>position</joint_control_type>
+          <joint_control_pid>
+            <p>3.5</p>
+            <i>0.5</i>
+            <d>0</d>
+            <iMax>4</iMax>
+            <iMin>-4</iMin>
+            <cmdMax>6</cmdMax>
+            <cmdMin>-6</cmdMin>
+          </joint_control_pid>
+          <joint_name>right_leg_joint</joint_name>
+        </channel>
+      </control_channels>
+    </plugin>
+    <static>0</static>
+
+  </model>
+</sdf>

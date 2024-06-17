@@ -5,38 +5,20 @@
         <pose>-0.003953 -0.000376 -0.01378 0 -0 0</pose>
         <mass>1.623</mass>
         <inertia>
-          <ixx>0.000963403</ixx>
-          <ixy>1.60479e-05</ixy>
-          <ixz>0.000134918</ixz>
-          <iyy>0.00439988</iyy>
-          <iyz>1.67572e-06</iyz>
-          <izz>0.00424632</izz>
+          <ixx>0.035125</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.035125</iyy>
+          <iyz>0</iyz>
+          <izz>0.060225</izz>
         </inertia>
       </inertial>
       <collision name='base_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <box>
-            <size>0.32 0.6 0.25</size>
+            <size>0.32 0.6 0.35</size>
           </box>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__battery_link_collision_1'>
-        <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://s500/meshes/battery_link.STL</uri>
-          </mesh>
-        </geometry>
-      </collision>
-      <collision name='base_link_fixed_joint_lump__jetson_link_collision_2'>
-        <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
-        <geometry>
-          <mesh>
-            <scale>1 1 1</scale>
-            <uri>model://s500/meshes/jetson_link.STL</uri>
-          </mesh>
         </geometry>
       </collision>
       <visual name='base_link_visual'>
@@ -48,8 +30,27 @@
           </mesh>
         </geometry>
       </visual>
-      <visual name='base_link_fixed_joint_lump__battery_link_visual_1'>
-        <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
+    </link>
+    <!-- battery link and joint-->
+    <joint name="battery_joint" type="fixed">
+      <child>battery_link</child>
+      <parent>base_link</parent>
+    </joint>
+    <link name="battery_link">
+      <pose>-0.07 -0.001506 -0.0195 0 -0 0</pose>
+      <inertial>
+        <pose>0.14 0 -0.015 0 -0 0</pose>
+        <mass>0.394</mass>
+        <inertia>
+          <ixx>0.0003199</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00365</iyy>
+          <iyz>0</iyz>
+          <izz>0.00365</izz>
+        </inertia>
+      </inertial>
+      <visual name="battery_visual">
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -57,8 +58,35 @@
           </mesh>
         </geometry>
       </visual>
-      <visual name='base_link_fixed_joint_lump__jetson_link_visual_2'>
-        <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
+      <collision name='battery_collision'>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/battery_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- jetson link and join-->
+    <joint name="jetson_joint" type="fixed">
+      <child>jetson_link</child>
+      <parent>base_link</parent>
+    </joint>
+    <link name="jetson_link">
+      <pose>-0.085723 -0.001506 -0.0195 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 -0.0195 0 0 0</pose>
+        <mass>0.250</mass>
+        <inertia>
+          <ixx>0.000219</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00269</iyy>
+          <iyz>0</iyz>
+          <izz>0.00269</izz>
+        </inertia>
+      </inertial>
+      <visual name="jetson_visual">
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -66,6 +94,14 @@
           </mesh>
         </geometry>
       </visual>
+      <collision name='jetson_collision'>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://s500/meshes/jetson_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
     </link>
     <joint name='rotor1_joint' type='revolute'>
       <pose relative_to='base_link'>0.16254 -0.16286 0.081323 0 -0 1.5708</pose>
@@ -89,12 +125,12 @@
         <pose>-0.001201 -0.001201 -0.016157 0 -0 0</pose>
         <mass>0.136</mass>
         <inertia>
-          <ixx>2.69e-05</ixx>
-          <ixy>-1.5443e-05</ixy>
-          <ixz>1.8889e-06</ixz>
-          <iyy>2.4928e-05</iyy>
-          <iyz>2.0354e-06</iyz>
-          <izz>3.6581e-05</izz>
+          <ixx>9.75e-07</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000273104</iyy>
+          <iyz>0</iyz>
+          <izz>0.000274004</izz>
         </inertia>
       </inertial>
       <collision name='rotor1_link_collision'>
@@ -138,12 +174,12 @@
         <pose>0.001201 0.001201 -0.016157 0 -0 0</pose>
         <mass>0.136</mass>
         <inertia>
-          <ixx>3.6821e-05</ixx>
-          <ixy>-1.0976e-05</ixy>
-          <ixz>-8.1957e-07</ixz>
-          <iyy>1.4958e-05</iyy>
-          <iyz>-2.4445e-06</iyz>
-          <izz>3.663e-05</izz>
+          <ixx>9.75e-07</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000273104</iyy>
+          <iyz>0</iyz>
+          <izz>0.000274004</izz>
         </inertia>
       </inertial>
       <collision name='rotor2_link_collision'>
@@ -187,12 +223,12 @@
         <pose>0.001381 -0.001381 -0.018584 0 -0 0</pose>
         <mass>0.136</mass>
         <inertia>
-          <ixx>2.432e-05</ixx>
-          <ixy>-4.2592e-06</ixy>
-          <ixz>5.6348e-07</ixz>
-          <iyy>1.1305e-05</iyy>
-          <iyz>4.0376e-07</iyz>
-          <izz>2.1009e-05</izz>
+          <ixx>9.75e-07</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000273104</iyy>
+          <iyz>0</iyz>
+          <izz>0.000274004</izz>
         </inertia>
       </inertial>
       <collision name='rotor3_link_collision'>
@@ -236,12 +272,12 @@
         <pose>-0.001381 0.001381 -0.018584 0 -0 0</pose>
         <mass>0.136</mass>
         <inertia>
-          <ixx>1.6275e-05</ixx>
-          <ixy>-7.6351e-06</ixy>
-          <ixz>-2.1651e-07</ixz>
-          <iyy>1.9312e-05</iyy>
-          <iyz>4.423e-07</iyz>
-          <izz>2.1045e-05</izz>
+          <ixx>9.75e-07</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000273104</iyy>
+          <iyz>0</iyz>
+          <izz>0.000274004</izz>
         </inertia>
       </inertial>
       <collision name='rotor4_link_collision'>
@@ -265,7 +301,7 @@
     </link> 
     <!-- imu link and joints-->
     <link name='/imu_link'>
-      <pose>0 0 0.02 0 0 0</pose>
+      <pose>0 0 0.01 0 0 0</pose>
       <inertial>
         <pose>0 0 0 0 0 0</pose>
         <mass>0.015</mass>
@@ -300,7 +336,7 @@
     <!-- Gps link and joints-->
     <include>
       <uri>model://gps</uri>
-      <pose>0.05 0 0.04 0 0 0</pose>
+      <pose>-0.1 0 0.18 0 0 0</pose>
       <name>gps0</name>
     </include>
     <joint name='gps0_joint' type='fixed'>
@@ -320,14 +356,14 @@
       <turningDirection>ccw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1500</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
+      <maxRotVelocity>1477</maxRotVelocity>
+      <motorConstant>8.09e-06</motorConstant>
+      <momentConstant>0.0157829</momentConstant>
       <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>1</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
+      <motorNumber>0</motorNumber>
+      <rotorDragCoefficient>0.00009541702789</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/1</motorSpeedPubTopic>
+      <motorSpeedPubTopic>/motor_speed/0</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor2' filename='libgazebo_motor_model.so'>
@@ -337,14 +373,14 @@
       <turningDirection>ccw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1500</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
+      <maxRotVelocity>1477</maxRotVelocity>
+      <motorConstant>8.09e-06</motorConstant>
+      <momentConstant>0.0157829</momentConstant>
       <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>2</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
+      <motorNumber>1</motorNumber>
+      <rotorDragCoefficient>0.00009541702789</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/2</motorSpeedPubTopic>
+      <motorSpeedPubTopic>/motor_speed/1</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor3' filename='libgazebo_motor_model.so'>
@@ -354,14 +390,14 @@
       <turningDirection>cw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1500</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
+      <maxRotVelocity>1477</maxRotVelocity>
+      <motorConstant>8.09e-06</motorConstant>
+      <momentConstant>0.0157829</momentConstant>
       <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>3</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
+      <motorNumber>2</motorNumber>
+      <rotorDragCoefficient>0.00009541702789</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/3</motorSpeedPubTopic>
+      <motorSpeedPubTopic>/motor_speed/2</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='motor4' filename='libgazebo_motor_model.so'>
@@ -371,14 +407,14 @@
       <turningDirection>cw</turningDirection>
       <timeConstantUp>0.0125</timeConstantUp>
       <timeConstantDown>0.025</timeConstantDown>
-      <maxRotVelocity>1500</maxRotVelocity>
-      <motorConstant>8.54858e-06</motorConstant>
-      <momentConstant>0.06</momentConstant>
+      <maxRotVelocity>1477</maxRotVelocity>
+      <motorConstant>8.09e-06</motorConstant>
+      <momentConstant>0.0157829</momentConstant>
       <commandSubTopic>/gazebo/command/motor_speed</commandSubTopic>
-      <motorNumber>4</motorNumber>
-      <rotorDragCoefficient>0.000806428</rotorDragCoefficient>
+      <motorNumber>3</motorNumber>
+      <rotorDragCoefficient>0.00009541702789</rotorDragCoefficient>
       <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
-      <motorSpeedPubTopic>/motor_speed/4</motorSpeedPubTopic>
+      <motorSpeedPubTopic>/motor_speed/3</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
     </plugin>
     <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>
@@ -456,7 +492,7 @@
     <static>0</static>
     <plugin name='gazebo_imu_plugin' filename='libgazebo_imu_plugin.so'>
       <robotNamespace></robotNamespace>
-      <linkName>typhoon_h480/imu_link</linkName>
+      <linkName>/imu_link</linkName>
       <imuTopic>/imu</imuTopic>
       <gyroscopeNoiseDensity>0.0003394</gyroscopeNoiseDensity>
       <gyroscopeRandomWalk>3.8785e-05</gyroscopeRandomWalk>

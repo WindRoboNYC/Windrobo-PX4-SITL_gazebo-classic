@@ -23,13 +23,13 @@
       <collision name='base_link_collision'>
         <pose>0 0 -0.1 0 -0 0</pose>
         <geometry>
-          <!-- <box>
+          <box>
             <size>0.3 0.67 0.15</size>
-          </box> -->
-          <mesh>
+          </box>
+          <!-- <mesh>
             <scale>1 1 1</scale>
             <uri>model://tarot_680/meshes/base_link.STL</uri>
-          </mesh>
+          </mesh> -->
         </geometry>
       </collision>
       <collision name='base_link_fixed_joint_lump__battery_link_collision_1'>

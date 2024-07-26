@@ -4,7 +4,7 @@
     <scene>
       <sky>
         <clouds>
-          <speed>12</speed>
+          <speed>8</speed>
         </clouds>
       </sky>
       <ambient>0.95 0.95 0.95 1</ambient>
@@ -26,16 +26,12 @@
     <include>
       <uri>model://asphalt_plane</uri>
     </include> 
-    <!-- custom building-->
-    <include>
-        <uri>model://building_L14_w2x2_p10x5</uri>
-    </include>
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
       <latitude_deg>6.200664093011519</latitude_deg>
       <longitude_deg>-75.57237759378218</longitude_deg>
-      <elevation>0</elevation>
+      <elevation>1495</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <physics name='default_physics' default='0' type='ode'>

@@ -1,44 +1,45 @@
 <sdf version='1.7'>
   <model name='windrobo'>
     <link name='base_link'>
+      <self_collide>0</self_collide>
       <inertial>
-        <pose>-0.025862 -0.001149 -0.030205 0 -0 0</pose>
-        <mass>19.946</mass>
+        <pose>-0.006055 0.000206 -0.102186 0 -0 0</pose>
+        <mass>7.923</mass>
         <inertia>
-          <ixx>1.45106</ixx>
-          <ixy>-0.00390923</ixy>
-          <ixz>-0.0393941</ixz>
-          <iyy>1.59223</iyy>
-          <iyz>0.0324063</iyz>
-          <izz>1.96886</izz>
+          <ixx>0.60625540</ixx>
+          <ixy>-0.00000806</ixy>
+          <ixz>-0.00691153</ixz>
+          <iyy>0.58352277</iyy>
+          <iyz>-0.00005032</iyz>
+          <izz>0.79721435</izz>
         </inertia>
       </inertial>
       <collision name='base_link_collision'>
-        <pose>0 0 -0.18 0 -0 0</pose>
+        <pose>0 0 -0.28 0 -0 0</pose>
         <geometry>
           <box>
-            <size>1 1 0.6</size>
+            <size>1 1 0.4</size>
           </box>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__pcb_link_collision_1'>
-        <pose>-0.20228 -0.00167 -0.20679 0 -0 0</pose>
+      <!-- <collision name='base_link_fixed_joint_lump__propellerguar_l_link_collision_2'>
+        <pose>0.399399 0.398317 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/pcb_link.STL</uri>
+            <uri>model://windrobo/meshes/propellerguar_l_link.STL</uri>
           </mesh>
         </geometry>
       </collision>
-      <collision name='base_link_fixed_joint_lump__water_link_collision_2'>
-        <pose>-0.32518 0.02883 -0.21379 0 -0 0</pose>
+      <collision name='base_link_fixed_joint_lump__propellerguar_r_link_collision_3'>
+        <pose>0.399399 -0.39808 0 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/water_link.STL</uri>
+            <uri>model://windrobo/meshes/propellerguar_r_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='base_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -49,13 +50,252 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
-      <visual name='base_link_fixed_joint_lump__pcb_link_visual_1'>
-        <pose>-0.20228 -0.00167 -0.20679 0 -0 0</pose>
+      <!-- <visual name='base_link_fixed_joint_lump__propellerguar_l_link_visual_2'>
+        <pose>0.399399 0.398317 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/propellerguar_l_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__propellerguar_r_link_visual_3'>
+        <pose>0.399399 -0.39808 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/propellerguar_r_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual> -->
+    </link>
+
+    <!-- BATTERY -->
+    <joint name="battery_joint" type="fixed">
+      <pose>0.010982 0 0.094513 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>battery_link</child>
+    </joint>
+    <link name="battery_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>5.088</mass>
+        <inertia>
+          <ixx>0.01317976</ixx>
+          <ixy>-0.00000000</ixy>
+          <ixz>-0.00000000</ixz>
+          <iyy>0.02330258</iyy>
+          <iyz>-0.00000008</iyz>
+          <izz>0.02883593</izz>
+        </inertia>
+      </inertial>
+      <visual name="battery_visual">
+        <pose>0.010982 0 0.094513 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/battery_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <collision name="battery_collision">
+        <pose>0.010982 0 0.094513 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- CAMERA -->
+    <joint name="camera_joint" type="fixed">
+      <pose>0.191275 0.00077 0.139513 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>camera_link</child>
+    </joint>
+    <link name="camera_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.115</mass>
+        <inertia>
+          <ixx>0.00009587</ixx>
+          <ixy>-0.00000000</ixy>
+          <ixz>-0.00000081</ixz>
+          <iyy>0.00003102</iyy>
+          <iyz>0.00000000</iyz>
+          <izz>0.00008268</izz>
+        </inertia>
+      </inertial>
+      <visual name="camera_visual">
+        <pose>0.191275 0.00077 0.139513 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/camera_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <collision name="camera_collision">
+        <pose>0.191275 0.00077 0.139513 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <sensor name='camera' type='camera'>
+        <visualize>1</visualize>
+        <update_rate>10</update_rate>
+        <camera>
+          <horizontal_fov>1.20428</horizontal_fov>
+          <image>
+            <format>R8G8B8</format>
+            <width>1280</width>
+            <height>720</height>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>100</far>
+          </clip>
+        </camera>
+        <!-- <camera>
+          <horizontal_fov>1.20428</horizontal_fov>
+          <image>
+            <format>R8G8B8</format>
+            <width>1280</width>
+            <height>720</height>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>100</far>
+          </clip>
+        </camera> -->
+        <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+          <frame_name>camera_link_optical</frame_name>
+        </plugin>
+        <pose>0.18 0 -0.04 0 -0 0</pose>
+      </sensor>
+    </link>
+
+    <!-- SONAR / ULTRASONIC -->
+    <joint name="sonar_joint" type="fixed">
+      <pose>0.158375 0.00077 0.055778 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>sonar_link</child>
+    </joint>
+    <link name="sonar_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.057</mass>
+        <inertia>
+          <ixx>0.00001089</ixx>
+          <ixy>0.00000003</ixy>
+          <ixz>0.00000002</ixz>
+          <iyy>0.00002491</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.00002489</izz>
+        </inertia>
+      </inertial>
+      <visual name="sonar_visual">
+        <pose>0.158375 0.00077 0.055778 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/sonar_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <collision name="sonar_collision">
+        <pose>0.158375 0.00077 0.055778 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <sensor name="ultrasonic" type="ray">
+        <pose>0.158375 0.00077 0.055778 0 -0 0</pose>
+        <visualize>true</visualize>
+        <update_rate>50</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>10</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.14835</min_angle>
+              <max_angle>0.14835</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>10</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.14835</min_angle>
+              <max_angle>0.14835</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.03</min>
+            <max>10</max>
+            <resolution>0.001</resolution>
+          </range>
+        </ray>
+        <plugin filename="libgazebo_ros_ray_sensor.so" name="ultrasonic">
+          <gaussianNoise>0.005</gaussianNoise>
+          <alwaysOn>true</alwaysOn>
+          <updateRate>50</updateRate>
+          <topicName>sensor/ultrasonic</topicName>
+          <frameName>sonar_link</frameName>
+          <radiation>ultrasound</radiation>
+          <fov>0.2967</fov>
+          <output_type>sensor_msgs/Range</output_type>
+        </plugin>
+      </sensor>
+    </link>
+
+    <!-- PCB BOX -->
+    <joint name="pcb_joint" type="fixed">
+      <pose>-0.220619 0 -0.192487 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>pcb_link</child>
+    </joint>
+    <link name="pcb_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.005552087</ixx>
+          <ixy>-0.00000000</ixy>
+          <ixz>-0.00000000</ixz>
+          <iyy>0.0033208</iyy>
+          <iyz>0.00000000</iyz>
+          <izz>0.00316875</izz>
+        </inertia>
+      </inertial>
+      <visual name="pcb_visual">
+        <pose>-0.220619 0 -0.192487 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -64,13 +304,42 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
-      <visual name='base_link_fixed_joint_lump__water_link_visual_2'>
-        <pose>-0.32518 0.02883 -0.21379 0 -0 0</pose>
+      <collision name="pcb_collision">
+        <pose>-0.220619 0 -0.192487 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- WATER -->
+    <joint name="water_joint" type="fixed">
+      <pose>-0.325119 0 -0.204987 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>water_link</child>
+    </joint>
+    <link name="water_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>1.254</mass>
+        <inertia>
+          <ixx>0.00692328</ixx>
+          <ixy>-0.00000000</ixy>
+          <ixz>-0.00000000</ixz>
+          <iyy>0.00603683</iyy>
+          <iyz>-0.00000003</iyz>
+          <izz>0.00409153</izz>
+        </inertia>
+      </inertial>
+      <visual name="water_visual">
+        <pose>-0.325119 0 -0.204987 0 -0 0</pose>
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
@@ -79,12 +348,21 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
+      <collision name="water_collision">
+        <pose>-0.325119 0 -0.204987 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
     </link>
+
     <link name='/imu_link'>
       <pose>0 0 0.02 0 0 0</pose>
       <inertial>
@@ -118,6 +396,9 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
+
+    <!-- ROTORS -->
+
     <joint name='rotor1_joint' type='revolute'>
       <pose relative_to='base_link'>0.37584 -0.39094 0.066381 0 -0 0</pose>
       <parent>base_link</parent>
@@ -140,17 +421,17 @@
       <pose relative_to='rotor1_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 -0 -0.00116 0 -0 0</pose>
-        <mass>0.30209</mass>
+        <mass>0.816</mass>
         <inertia>
-          <ixx>0.00062486</ixx>
-          <ixy>0.00087885</ixy>
-          <ixz>-4.2628e-10</ixz>
-          <iyy>0.0014457</iyy>
-          <iyz>1.9606e-10</iyz>
-          <izz>0.0020559</izz>
+          <ixx>0.00044892</ixx>
+          <ixy>-0.00045680</ixy>
+          <ixz>-0.00000002</ixz>
+          <iyy>0.01453926</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.01478718</izz>
         </inertia>
       </inertial>
-      <collision name='rotor1_link_collision'>
+      <!-- <collision name='rotor1_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -158,7 +439,7 @@
             <uri>model://windrobo/meshes/rotor1_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='rotor1_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -196,18 +477,18 @@
     <link name='rotor2_link'>
       <pose relative_to='rotor2_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-1e-06 0 -0.00116 0 -0 0</pose>
-        <mass>0.302086</mass>
+        <pose>0 -0 -0.00116 0 -0 0</pose>
+        <mass>0.816</mass>
         <inertia>
-          <ixx>0.000108566</ixx>
-          <ixy>0.000286451</ixy>
-          <ixz>3.66324e-10</ixz>
-          <iyy>0.00196192</iyy>
-          <iyz>-1.15198e-10</iyz>
-          <izz>0.0020559</izz>
+          <ixx>0.00044892</ixx>
+          <ixy>-0.00045680</ixy>
+          <ixz>-0.00000002</ixz>
+          <iyy>0.01453926</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.01478718</izz>
         </inertia>
       </inertial>
-      <collision name='rotor2_link_collision'>
+      <!-- <collision name='rotor2_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -215,7 +496,7 @@
             <uri>model://windrobo/meshes/rotor2_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='rotor2_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -253,18 +534,18 @@
     <link name='rotor3_link'>
       <pose relative_to='rotor3_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0 0 -0.00116 0 -0 0</pose>
-        <mass>0.302082</mass>
+        <pose>0 -0 -0.00116 0 -0 0</pose>
+        <mass>0.816</mass>
         <inertia>
-          <ixx>0.00136351</ixx>
-          <ixy>0.00091317</ixy>
-          <ixz>7.78262e-11</ixz>
-          <iyy>0.000707675</iyy>
-          <iyz>-2.15688e-10</iyz>
-          <izz>0.00205661</izz>
+          <ixx>0.00044892</ixx>
+          <ixy>-0.00045680</ixy>
+          <ixz>-0.00000002</ixz>
+          <iyy>0.01453926</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.01478718</izz>
         </inertia>
       </inertial>
-      <collision name='rotor3_link_collision'>
+      <!-- <collision name='rotor3_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -272,7 +553,7 @@
             <uri>model://windrobo/meshes/rotor3_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='rotor3_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -311,17 +592,17 @@
       <pose relative_to='rotor4_joint'>0 0 0 0 -0 0</pose>
       <inertial>
         <pose>0 -0 -0.00116 0 -0 0</pose>
-        <mass>0.302081</mass>
+        <mass>0.816</mass>
         <inertia>
-          <ixx>0.00105849</ixx>
-          <ixy>0.000969655</ixy>
-          <ixz>3.49932e-10</ixz>
-          <iyy>0.00101198</iyy>
-          <iyz>-2.68638e-10</iyz>
-          <izz>0.00205589</izz>
+          <ixx>0.00044892</ixx>
+          <ixy>-0.00045680</ixy>
+          <ixz>-0.00000002</ixz>
+          <iyy>0.01453926</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.01478718</izz>
         </inertia>
       </inertial>
-      <collision name='rotor4_link_collision'>
+      <!-- <collision name='rotor4_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -329,7 +610,7 @@
             <uri>model://windrobo/meshes/rotor4_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='rotor4_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -367,18 +648,18 @@
     <link name='rotor5_link'>
       <pose relative_to='rotor5_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0 0 0.00494 0 -0 0</pose>
-        <mass>0.30205</mass>
+        <pose>0 -0 -0.00116 0 -0 0</pose>
+        <mass>0.816</mass>
         <inertia>
-          <ixx>7.60116e-05</ixx>
-          <ixy>-0.000143574</ixy>
-          <ixz>1.09097e-10</ixz>
-          <iyy>0.00199518</iyy>
-          <iyz>3.20564e-11</iyz>
-          <izz>0.00205661</izz>
+          <ixx>0.00044892</ixx>
+          <ixy>-0.00045680</ixy>
+          <ixz>-0.00000002</ixz>
+          <iyy>0.01453926</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.01478718</izz>
         </inertia>
       </inertial>
-      <collision name='rotor5_link_collision'>
+      <!-- <collision name='rotor5_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -386,7 +667,7 @@
             <uri>model://windrobo/meshes/rotor5_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='rotor5_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -424,18 +705,18 @@
     <link name='rotor6_link'>
       <pose relative_to='rotor6_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0 0 0.00494 0 -0 0</pose>
-        <mass>0.30209</mass>
+        <pose>0 -0 -0.00116 0 -0 0</pose>
+        <mass>0.816</mass>
         <inertia>
-          <ixx>0.000624856</ixx>
-          <ixy>0.00087885</ixy>
-          <ixz>1.64607e-10</ixz>
-          <iyy>0.00144565</iyy>
-          <iyz>5.63007e-11</iyz>
-          <izz>0.00205593</izz>
+          <ixx>0.00044892</ixx>
+          <ixy>-0.00045680</ixy>
+          <ixz>-0.00000002</ixz>
+          <iyy>0.01453926</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.01478718</izz>
         </inertia>
       </inertial>
-      <collision name='rotor6_link_collision'>
+      <!-- <collision name='rotor6_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -443,7 +724,7 @@
             <uri>model://windrobo/meshes/rotor6_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='rotor6_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -481,18 +762,18 @@
     <link name='rotor7_link'>
       <pose relative_to='rotor7_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0 0 0.00494 0 -0 0</pose>
-        <mass>0.302081</mass>
+        <pose>0 -0 -0.00116 0 -0 0</pose>
+        <mass>0.816</mass>
         <inertia>
-          <ixx>0.00108861</ixx>
-          <ixy>0.000968459</ixy>
-          <ixz>1.42801e-12</ixz>
-          <iyy>0.000981849</iyy>
-          <iyz>-4.58883e-13</iyz>
-          <izz>0.00205588</izz>
+          <ixx>0.00044892</ixx>
+          <ixy>-0.00045680</ixy>
+          <ixz>-0.00000002</ixz>
+          <iyy>0.01453926</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.01478718</izz>
         </inertia>
       </inertial>
-      <collision name='rotor7_link_collision'>
+      <!-- <collision name='rotor7_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -500,7 +781,7 @@
             <uri>model://windrobo/meshes/rotor7_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='rotor7_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -538,18 +819,18 @@
     <link name='rotor8_link'>
       <pose relative_to='rotor8_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>1e-06 -1e-06 0.00494 0 -0 0</pose>
-        <mass>0.30209</mass>
+        <pose>0 -0 -0.00116 0 -0 0</pose>
+        <mass>0.816</mass>
         <inertia>
-          <ixx>0.00098075</ixx>
-          <ixy>0.00096841</ixy>
-          <ixz>-4.0247e-10</ixz>
-          <iyy>0.0010897</iyy>
-          <iyz>2.8663e-10</iyz>
-          <izz>0.0020559</izz>
+          <ixx>0.00044892</ixx>
+          <ixy>-0.00045680</ixy>
+          <ixz>-0.00000002</ixz>
+          <iyy>0.01453926</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.01478718</izz>
         </inertia>
       </inertial>
-      <collision name='rotor8_link_collision'>
+      <!-- <collision name='rotor8_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -557,7 +838,7 @@
             <uri>model://windrobo/meshes/rotor8_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='rotor8_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -574,22 +855,25 @@
         </material>
       </visual>
     </link>
+
+    <!-- ROBOTIC ARM -->
+
     <joint name='servo1_joint' type='prismatic'>
-      <pose relative_to='base_link'>-8.2e-05 -0.001169 0 0 -0 0</pose>
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>
       <parent>base_link</parent>
       <child>servo1_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-0.32271</lower>
-          <upper>-0.1502</upper>
+          <lower>-0.28388</lower>
+          <upper>-0.1838</upper>
           <effort>10</effort>
           <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>1.0</damping> <!--10-->
-          <friction>2.0</friction>
+          <damping>30</damping> <!--10-->
+          <friction>300</friction>
           <spring_stiffness>0.0</spring_stiffness>
         </dynamics>
       </axis>
@@ -597,18 +881,18 @@
     <link name='servo1_link'>
       <pose relative_to='servo1_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.031107 -6.2e-05 -0.000315 0 -0 0</pose>
-        <mass>0.9</mass>
+        <pose>0.040411 0.00012 -0.000562 0 -0 0</pose>
+        <mass>1.257</mass>
         <inertia>
           <ixx>0.00898453</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.00819458</iyy>
-          <iyz>0</iyz>
-          <izz>0.0133202</izz>
+          <ixy>-0.00000721</ixy>
+          <ixz>0.00000146</ixz>
+          <iyy>0.00526754</iyy>
+          <iyz>0.00000299</iyz>
+          <izz>0.00648677</izz>
         </inertia>
       </inertial>
-      <collision name='servo1_link_collision'>
+      <!-- <collision name='servo1_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -616,7 +900,7 @@
             <uri>model://windrobo/meshes/servo1_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='servo1_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -627,21 +911,21 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
     </link>
     <joint name='servo2_joint' type='revolute'>
-      <pose relative_to='servo1_link'>0.1275 -0.000174 0 0 -0 0</pose>
+      <pose relative_to='servo1_link'>0.1275 0.00017434 0 0 -0 0</pose>
       <parent>servo1_link</parent>
       <child>servo2_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1.6581</lower>
-          <upper>1.7453</upper>
+          <lower>-1.74</lower>
+          <upper>1.74</upper>
           <effort>10</effort>
           <velocity>1</velocity>
         </limit>
@@ -654,20 +938,20 @@
       </axis>
     </joint>
     <link name='servo2_link'>
-      <pose relative_to='servo2_joint'>0 0 0 0 -0 0</pose>
+      <pose relative_to='servo2_joint'>0 0 0 0 0 0</pose>
       <inertial>
-        <pose>0.19592 -0.004553 -0.005563 0 1.57 0</pose>
-        <mass>1.5</mass>
+        <pose>0.198455 -0.003678 -0.006391 0 -0 0</pose>
+        <mass>1.17</mass>
         <inertia>
-          <ixx>0.01441432</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.0187321</iyy>
-          <iyz>0</iyz>
-          <izz>0.0066712</izz>
+          <ixx>0.00199208</ixx>
+          <ixy>0.00000158</ixy>
+          <ixz>-0.00006783</ixz>
+          <iyy>0.01532883</iyy>
+          <iyz>0.00005473</iyz>
+          <izz>0.01400285</izz>
         </inertia>
       </inertial>
-      <collision name='servo2_link_collision'>
+      <!-- <collision name='servo2_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -675,7 +959,7 @@
             <uri>model://windrobo/meshes/servo2_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='servo2_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -686,7 +970,7 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
@@ -715,18 +999,18 @@
     <link name='servo3_link'>
       <pose relative_to='servo3_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.141621 -0.000233 -0.000661 0 -0 1.57</pose>
-        <mass>0.205</mass>
+        <pose>0.141621 -0.000233 -0.000661 0 -0 0</pose>
+        <mass>0.271</mass>
         <inertia>
-          <ixx>0.00193874</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.00008350</iyy>
-          <iyz>0</iyz>
-          <izz>0.00188016</izz>
+          <ixx>0.00018960</ixx>
+          <ixy>-0.00000499</ixy>
+          <ixz>0.00001706</ixz>
+          <iyy>0.00376356</iyy>
+          <iyz>0.00000003</iyz>
+          <izz>0.00364405</izz>
         </inertia>
       </inertial>
-      <collision name='servo3_link_collision'>
+      <!-- <collision name='servo3_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -734,7 +1018,7 @@
             <uri>model://windrobo/meshes/servo3_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='servo3_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -745,21 +1029,21 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
     </link>
     <joint name='servo4_joint' type='revolute'>
-      <pose relative_to='servo3_link'>0.32583 0 0 0 -0 0</pose>
+      <pose relative_to='servo3_link'>0.35883 0.001 0 0 -0 0</pose>
       <parent>servo3_link</parent>
       <child>servo4_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-2.618</lower>
-          <upper>2.618</upper>
+          <lower>-1.57</lower>
+          <upper>2.51</upper>
           <effort>10</effort>
           <velocity>2</velocity>
         </limit>
@@ -774,18 +1058,18 @@
     <link name='servo4_link'>
       <pose relative_to='servo4_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.079649 0.002221 4e-06 0 -0 1.57</pose>
-        <mass>0.16</mass>
+        <pose>0.07885 0.001552 -0.000618 0 -0 0</pose>
+        <mass>0.201</mass>
         <inertia>
-          <ixx>0.00025160</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.00006046</iyy>
-          <iyz>0</iyz>
-          <izz>0.00026438</izz>
+          <ixx>0.00010275</ixx>
+          <ixy>0.00000142</ixy>
+          <ixz>0.00000000</ixz>
+          <iyy>0.00033858</iyy>
+          <iyz>0.00000000</iyz>
+          <izz>0.00031622</izz>
         </inertia>
       </inertial>
-      <collision name='servo4_link_collision'>
+      <!-- <collision name='servo4_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -793,7 +1077,7 @@
             <uri>model://windrobo/meshes/servo4_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='servo4_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -804,28 +1088,30 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
     </link>
     <joint name='servo5_joint' type='revolute'>
-      <pose relative_to='servo4_link'>0.1104 0.001343 0.00015 1.5708 -0 0</pose>
+      <pose relative_to='servo4_link'>0.11763 -0.001293 -0.000725 1.5708 -0 0</pose>
       <parent>servo4_link</parent>
       <child>servo5_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-1.8326</lower>
-          <upper>1.7802</upper>
+          <lower>-1.85</lower>
+          <upper>1.78</upper>
           <effort>10</effort>
           <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>1.0</damping>
-          <friction>2.0</friction>
+          <!-- <damping>1.0</damping>
+          <friction>2.0</friction> -->
+          <damping>0.1</damping>
+          <friction>0.01</friction>
           <spring_stiffness>0.0</spring_stiffness> <!--1.0-->
         </dynamics>
       </axis>
@@ -833,18 +1119,18 @@
     <link name='servo5_link'>
       <pose relative_to='servo5_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.017311 2.1e-05 0.001043 0 -0 0</pose>
-        <mass>0.084339</mass>
+        <pose>0.02001 0.00013 -0.001592 0 -0 0</pose>
+        <mass>0.09612</mass>
         <inertia>
-          <ixx>0.00004224</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.00004680</iyy>
-          <iyz>0</iyz>
-          <izz>0.00004680</izz>
+          <ixx>0.00003584</ixx>
+          <ixy>0.00000637</ixy>
+          <ixz>0.00000000</ixz>
+          <iyy>0.00005438</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.00004718</izz>
         </inertia>
       </inertial>
-      <collision name='servo5_link_collision'>
+      <!-- <collision name='servo5_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -852,7 +1138,7 @@
             <uri>model://windrobo/meshes/servo5_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='servo5_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -863,28 +1149,30 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
     </link>
     <joint name='servo6_joint' type='revolute'>
-      <pose relative_to='servo5_link'>0.0621 -0.002672 0.001043 1.5708 -0 1.5708</pose>
+      <pose relative_to='servo5_link'>0.0618 0 -0.001593 1.5708 -0 1.5708</pose>
       <parent>servo5_link</parent>
       <child>servo6_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-2.0944</lower>
-          <upper>2.0944</upper>
+          <lower>-2.09</lower>
+          <upper>2.09</upper>
           <effort>10</effort>
           <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>1.0</damping>
-          <friction>2.0</friction>
+          <!-- <damping>1.0</damping>
+          <friction>2.0</friction> -->
+          <damping>0.1</damping>
+          <friction>0.01</friction>
           <spring_stiffness>0.0</spring_stiffness>
         </dynamics>
       </axis>
@@ -892,18 +1180,18 @@
     <link name='servo6_link'>
       <pose relative_to='servo6_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>-0.005163 9e-06 0.013375 0 0 0</pose>
-        <mass>0.0051803</mass>
+        <pose>0.005029 1.3e-05 0.012509 0 -0 0</pose>
+        <mass>0.09612</mass>
         <inertia>
-          <ixx>0.00005972</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.00001908</iyy>
-          <iyz>0</iyz>
-          <izz>0.00006666</izz>
+          <ixx>0.00003584</ixx>
+          <ixy>0.00000637</ixy>
+          <ixz>0.00000000</ixz>
+          <iyy>0.00005438</iyy>
+          <iyz>-0.00000000</iyz>
+          <izz>0.00004718</izz>
         </inertia>
       </inertial>
-      <collision name='servo6_link_collision'>
+      <!-- <collision name='servo6_link_collision'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
@@ -911,7 +1199,7 @@
             <uri>model://windrobo/meshes/servo6_link.STL</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
       <visual name='servo6_link_visual'>
         <pose>0 0 0 0 -0 0</pose>
         <geometry>
@@ -922,44 +1210,48 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
     </link>
+    
     <joint name='servo7_joint' type='revolute'>
-      <pose relative_to='servo6_link'>0.002522 0 0.039828 0.004407 -1.57079 -3.14159</pose>
+      <pose relative_to='servo6_link'>0.000726 0 0.039728 -9.3e-05 -1.57079 3.14159</pose>
       <parent>servo6_link</parent>
       <child>servo7_link</child>
       <axis>
         <xyz>0 0 1</xyz>
         <limit>
-          <lower>-0.34907</lower>
-          <upper>1.7977</upper>
+          <lower>-0.35</lower>
+          <upper>1.74</upper>
           <effort>10</effort>
           <velocity>3.14</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>1.0</damping>
-          <friction>2.0</friction>
+          <!-- <damping>1.0</damping>
+          <friction>2.0</friction> -->
+          <damping>0.1</damping>
+          <friction>0.01</friction>
           <spring_stiffness>0.0</spring_stiffness> <!--10-->
         </dynamics>
       </axis>
     </joint>
+
     <link name='servo7_link'>
       <pose relative_to='servo7_joint'>0 0 0 0 -0 0</pose>
       <inertial>
-        <pose>0.034068 -0.027252 0.002312 0 -0 0</pose>
-        <mass>0.3</mass>
+        <pose>0.031979 -0.028224 0.000476 0 -0 0</pose>
+        <mass>0.410</mass>
         <inertia>
-          <ixx>0.00123262</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.00075</iyy>
-          <iyz>0</iyz>
-          <izz>0.00075</izz>
+          <ixx>0.00208911</ixx>
+          <ixy>-0.00015149</ixy>
+          <ixz>0.00000319</ixz>
+          <iyy>0.00228960</iyy>
+          <iyz>0.00000190</iyz>
+          <izz>0.00064838</izz>
         </inertia>
       </inertial>
       <collision name='servo7_link_collision'>
@@ -967,7 +1259,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>model://windrobo/meshes/servo7_link.STL</uri>
+            <uri>model://windrobo/meshes/servo7_link_collision.STL</uri>
           </mesh>
         </geometry>
       </collision>
@@ -981,13 +1273,14 @@
         </geometry>
         <material>
           <script>
-            <name>Gazebo/DarkGrey</name>
+            <name>Gazebo/White</name>
             <uri>file://media/materials/scripts/gazebo.material</uri>
           </script>
         </material>
       </visual>
     </link>
-    <joint name="camera_servo4_joint" type="fixed">
+
+    <!-- <joint name="camera_servo4_joint" type="fixed">
       <pose relative_to='servo4_link'>0.002522 0 0.05 0 0 0</pose>
       <child>camera_servo4_link</child>
       <parent>servo4_link</parent>
@@ -1012,7 +1305,7 @@
         <izz>2.407e-6</izz>
         </inertia>
       </inertial>
-      <!-- <collision name='camera_servo7_collision'>
+      <collision name='camera_servo7_collision'>
         <geometry>
           <box>
             <size>0.01 0.01 0.01</size>
@@ -1028,7 +1321,7 @@
             <ode/>
           </friction>
         </surface>
-      </collision> -->
+      </collision>
       <visual name='camera_servo7_visual'>
         <geometry>
           <box>
@@ -1037,7 +1330,7 @@
         </geometry>
       </visual>
       <sensor name='camera' type='camera'>
-        <camera name='__default__'>
+        <camera name='camera_servo4'>
           <horizontal_fov>1.047</horizontal_fov>
           <image>
             <width>320</width>
@@ -1066,10 +1359,10 @@
         <plugin name='camera_plugin' filename='libgazebo_ros_camera.so'>
             <robotNamespace></robotNamespace>
           <alwaysOn>true</alwaysOn>
-          <imageTopicName>image_raw</imageTopicName>
-          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frame_name>camera_link_optical</frame_name>
+          <topicName>/camera/servo4</topicName>
           <updateRate>30.0</updateRate>
-          <cameraName>usb_cam</cameraName>
+          <cameraName>camera_servo4</cameraName>
           <frameName>/robot_camera_link</frameName>
           <CxPrime>320.5</CxPrime>
           <Cx>320.5</Cx>
@@ -1082,16 +1375,10 @@
           <distortionT1>0.0</distortionT1>
           <distortionT2>0.0</distortionT2>
         </plugin>
-        <!-- GStreamer camera plugin (needs a lot of CPU! Consider lowering the
-           camera image size) -->
-        <plugin name="GstCameraPlugin" filename="libgazebo_gst_camera_plugin.so">
-          <robotNamespace></robotNamespace>
-          <udpPort>5600</udpPort>
-        </plugin>
       </sensor>
       <self_collide>0</self_collide>
       <kinematic>0</kinematic>
-    </link>
+    </link> -->
     <!-- <joint name='camera_servo4_joint' type='fixed'>
       <pose relative_to='servo7_link'>0.002522 0 0.039828 0 0 0</pose>
       <parent>servo7_link</parent>

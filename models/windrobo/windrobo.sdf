@@ -1151,6 +1151,21 @@
             <uri>model://windrobo/meshes/servo7_link.dae</uri>
           </mesh>
         </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.0001</min_depth>
+              <kp>1e+07</kp>
+              <kd>1</kd>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.2</mu> <!-- Friction coefficient -->
+              <mu2>0.01</mu2> <!-- Second friction coefficient -->
+            </ode>
+          </friction>
+        </surface>
       </visual>
     </link>
 

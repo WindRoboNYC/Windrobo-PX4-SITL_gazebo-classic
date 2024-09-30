@@ -1426,6 +1426,22 @@
       <parent>base_link</parent>
     </joint>
 
+    <link name='gps_visual_link'>
+      <pose>-0.21 0 0.169 0 0 0</pose>
+      <visual name="gps_visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://windrobo/meshes/gps_link.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='gps_visual_joint' type='fixed'>
+      <child>gps_visual_link</child>
+      <parent>base_link</parent>
+    </joint>
+
     <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>
       <robotNamespace />
     </plugin>

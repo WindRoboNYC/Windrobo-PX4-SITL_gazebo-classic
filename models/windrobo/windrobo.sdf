@@ -222,18 +222,18 @@
             <horizontal>
               <samples>10</samples>
               <resolution>1</resolution>
-              <min_angle>-0.095931</min_angle>
-              <max_angle>0.095931</max_angle>
+              <min_angle>-0.14835</min_angle>
+              <max_angle>0.14835</max_angle>
             </horizontal>
             <vertical>
               <samples>10</samples>
               <resolution>1</resolution>
-              <min_angle>-0.095931</min_angle>
-              <max_angle>0.095931</max_angle>
+              <min_angle>-0.14835</min_angle>
+              <max_angle>0.14835</max_angle>
             </vertical>
           </scan>
           <range>
-            <min>0.05</min>
+            <min>0.03</min>
             <max>10</max>
             <resolution>0.001</resolution>
           </range>
@@ -783,8 +783,8 @@
         <limit>
           <lower>-0.28388</lower>
           <upper>-0.1838</upper>
-          <effort>1000</effort>
-          <velocity>0</velocity>
+          <effort>10</effort>
+          <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
@@ -836,12 +836,12 @@
         <limit>
           <lower>-1.74</lower>
           <upper>1.74</upper>
-          <effort>30</effort>
+          <effort>10</effort>
           <velocity>1</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
-          <damping>6</damping>
+          <damping>1.0</damping>
           <friction>2.0</friction>
           <spring_stiffness>0.0</spring_stiffness>
         </dynamics>
@@ -889,7 +889,7 @@
         <limit>
           <lower>-2.1817</lower>
           <upper>2.1817</upper>
-          <effort>16</effort>
+          <effort>10</effort>
           <velocity>2</velocity>
         </limit>
         <dynamics>
@@ -942,7 +942,7 @@
         <limit>
           <lower>-1.57</lower>
           <upper>2.51</upper>
-          <effort>15</effort>
+          <effort>10</effort>
           <velocity>2</velocity>
         </limit>
         <dynamics>
@@ -995,15 +995,15 @@
         <limit>
           <lower>-1.85</lower>
           <upper>1.78</upper>
-          <effort>11</effort>
+          <effort>10</effort>
           <velocity>2</velocity>
         </limit>
         <dynamics>
           <spring_reference>0</spring_reference>
           <!-- <damping>1.0</damping>
           <friction>2.0</friction> -->
-          <damping>0.2</damping>
-          <friction>0.1</friction>
+          <damping>0.1</damping>
+          <friction>0.01</friction>
           <spring_stiffness>0.0</spring_stiffness> <!--1.0-->
         </dynamics>
       </axis>
@@ -1057,8 +1057,8 @@
           <spring_reference>0</spring_reference>
           <!-- <damping>1.0</damping>
           <friction>2.0</friction> -->
-          <damping>0.2</damping>
-          <friction>0.1</friction>
+          <damping>0.1</damping>
+          <friction>0.01</friction>
           <spring_stiffness>0.0</spring_stiffness>
         </dynamics>
       </axis>
@@ -1151,21 +1151,6 @@
             <uri>model://windrobo/meshes/servo7_link.dae</uri>
           </mesh>
         </geometry>
-        <surface>
-          <contact>
-            <ode>
-              <min_depth>0.0001</min_depth>
-              <kp>1e+07</kp>
-              <kd>1</kd>
-            </ode>
-          </contact>
-          <friction>
-            <ode>
-              <mu>0.2</mu> <!-- Friction coefficient -->
-              <mu2>0.01</mu2> <!-- Second friction coefficient -->
-            </ode>
-          </friction>
-        </surface>
       </visual>
     </link>
 
@@ -1429,8 +1414,10 @@
       <motorSpeedPubTopic>/motor_speed/7</motorSpeedPubTopic>
       <rotorVelocitySlowdownSim>20</rotorVelocitySlowdownSim>
     </plugin>
+
     <include>
       <uri>model://gps</uri>
+      <!-- <pose>-0.21 0 0.16 0 0 0</pose> -->
       <pose>0 0 0 0 0 0</pose>
       <name>gps0</name>
     </include>
@@ -1438,6 +1425,7 @@
       <child>gps0::link</child>
       <parent>base_link</parent>
     </joint>
+
     <plugin name='groundtruth_plugin' filename='libgazebo_groundtruth_plugin.so'>
       <robotNamespace />
     </plugin>
